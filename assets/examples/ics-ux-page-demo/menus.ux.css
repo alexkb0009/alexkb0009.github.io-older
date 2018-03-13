@@ -1,0 +1,283 @@
+
+
+#fixed-nav-container {
+    position: fixed;
+    height: 10px;
+    top: 0;
+    color: #fff;
+    width: 100%;
+    z-index: 10;
+    transition: border-color 0.75s, padding 0s 0.75s, opacity 0.75s, border-color 0.75s, height 0.75s;
+    overflow: hidden;
+  }
+  
+  body.request-dialog #fixed-nav-container {
+    position: absolute;
+    overflow: hidden !important;
+  }
+  
+  /**
+  #fixed-nav {
+    position: absolute;
+    height: 23px;
+    opacity: 0.6;
+    line-height: 23px;
+    top: 0;
+    right: -1035px;
+    color: #fff;
+    padding: 10px 0 0 2px;
+    font-size: 10px;
+    border-left: 1px solid;
+    font-weight: 400;
+    border-color: #fff;
+    border-color: transparent; 
+    -o-transition: right 0.75s, opacity .75s,padding-top 0s 0.75s;
+    -moz-transition: right 0.75s, opacity .75s,padding-top 0s 0.75s;
+    -webkit-transition: right 0.75s, opacity .75s,padding-top 0s 0.75s;
+    transition: right 0.75s, opacity .75s, padding-top 0s 0.75s;
+  }
+  **/
+  
+  #fixed-nav-container:hover,
+  body.request-dialog #fixed-nav-container,
+  body.slide-0 #fixed-nav-container {
+    height: 120px;
+    padding-bottom: 22px;
+    transition: border-color 0.75s, background 0.75s, padding 0.75s, opacity 0.75s, height 0.75s;
+    overflow: visible;
+  }
+  
+  #fixed-nav-container #small-ics-logo {
+    position: absolute;
+    z-index: 0;
+    left: 1px;
+    top: 3px;
+    opacity: 0;
+    transition: 0.5s;
+  }
+  
+  #fixed-nav-container #small-ics-logo img {
+    height: 52px;
+  }
+  
+  body.slide-0 #fixed-nav-container #small-ics-logo,
+  body.request-dialog #fixed-nav-container #small-ics-logo,
+  body #fixed-nav-container:hover #small-ics-logo {
+    opacity: 0.9;
+    display: block;
+  }
+  
+  body#body-element #fixed-nav-container:hover #small-ics-logo {
+    left: 19px;
+  }
+  
+  body#body-element #fixed-nav-container:hover #small-ics-logo:hover {
+    opacity: 1;
+  }
+  
+  body#body-element #fixed-nav-container #ics-site-menu {
+    position: absolute;
+    top: 0px;
+    left: -100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0;
+    padding: 5px 100% 5px 0;
+    height: 40px;
+    border-bottom: 2px solid transparent;
+    font-size: .9em;
+    font-weight: 500;
+    transition: background 0.75s, opacity 0.5s, padding 0.25s, left 1s, box-shadow 1s, height 0s;
+  }
+  
+  body#body-element #fixed-nav-container:hover #ics-site-menu,
+  body.request-dialog #fixed-nav-container #ics-site-menu,
+  body.slide-0 #fixed-nav-container #ics-site-menu {
+    display: block;
+    opacity: 1 !important;
+    left: 0% !important;
+  }
+  
+  body#body-element #fixed-nav-container:hover #ics-site-menu:hover {
+    background: rgba(0,0,0,0.5) !important;
+    border-color: rgba(0,0,0,0.3);
+  }
+  
+  body#body-element #fixed-nav-container #ics-site-menu .ics-site-menu-item {
+    float: left;
+    padding: 10px 15px 10px;
+    line-height: 20px;
+    display: block;
+    border-right: 1px solid rgba(255,255,255,0.1);
+    -o-transition: background 0.25s;
+    -moz-transition: background 0.25s;
+    -webkit-transition: background 0.25s;
+    transition: background 0.25s;
+    position: relative;
+  }
+  
+  body#body-element #fixed-nav-container #ics-site-menu .ics-site-menu-item:last-child {
+    border-right: none;
+  }
+  
+  body#body-element #fixed-nav-container #ics-site-menu .ics-site-menu-item:hover {
+    background: rgb(10,10,10);
+    box-shadow: 0 0 4px rgba(0,0,0,0.75);
+  }
+  
+  body#body-element #fixed-nav-container #ics-site-menu .ics-site-menu-start {
+    float: left;
+    padding: 9px 24px 0px 125px;
+    opacity: 0.3;
+    line-height: 20px;
+  }
+  
+  body#body-element #fixed-nav-container #ics-site-menu .ics-site-menu-item a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  body#body-element #fixed-nav-container #ics-site-menu .ics-site-menu-item ul.sub-menu-list {
+    position: absolute;
+    top: 35px;
+    left: 0;
+    padding: 16px 0 0;
+    list-style-type: none;
+    min-width: 240px;
+    max-height: 0px;
+    overflow: hidden;
+    margin: 0;
+    transition: max-height .75s, opacity .25s;
+    opacity: 0.25;
+  }
+  
+  body#body-element #fixed-nav-container #ics-site-menu .ics-site-menu-item:hover ul.sub-menu-list {
+    max-height: 400px;
+    z-index: 10;
+    opacity: 1;
+  }
+  
+  body#body-element #fixed-nav-container #ics-site-menu .ics-site-menu-item ul.sub-menu-list li.sub-item {
+    display: block;
+    background: #272727; 
+    background: rgba(30,30,30,0.7);
+    padding: 8px 15px;
+  }
+  
+  body#body-element #fixed-nav-container #ics-site-menu .ics-site-menu-item ul.sub-menu-list li.sub-item:hover {
+    background: #111111;
+  }
+  
+  body#body-element #fixed-nav-container #ics-site-menu .ics-site-menu-item ul.sub-menu-list li.spacer {
+    width: 100%;
+    display: block;
+    background: #181818;
+    padding: 3px 0;
+  }
+  
+  body#body-element #fixed-nav-container #ics-site-menu .ics-site-menu-item ul.sub-menu-list li.sub-item a.sub-item-link {
+    width: 100%;
+    display: block;
+  }
+  
+  
+  /**
+  body#body-element #fixed-nav-container:hover #fixed-nav {
+    border-color: transparent;
+    opacity: 1;
+    padding-top: 10px;
+    right: 10px !important;
+    padding-left: 144px;
+    -o-transition: right 1s 0s, opacity .75s, padding-top 0s;
+    -moz-transition: right 1s 0s, opacity .75s, padding-top 0s;
+    -webkit-transition: right 1s 0s, opacity .75s, padding-top 0s;
+    transition: right 1s, opacity .75s, padding-top 0s;
+  }
+  
+  body#body-element.slide-0 #fixed-nav-container:hover #fixed-nav {
+    opacity: 1;
+  }
+  
+  #fixed-nav .fixed-menu-start {
+    padding: 2px 8px 0 7px;
+    font-weight: 400;
+    float: left;
+    background: rgba(0,0,0,0.55);
+    transition: .75s;
+    line-height: 19px;
+    height: 23px;
+    border-radius: 4px 0 0 4px;
+  }
+  
+  #fixed-nav .fixed-menu-start:after {
+    content: " >";
+    color: rgba(255,255,255,0.5);
+    font-weight: 300;
+    font-size: 1.6em;
+    display: inline-block;
+    line-height: 19px;
+    opacity: 0;
+    width: 0;
+  }
+  
+  #fixed-nav .fixed-menu-item {
+    float: left;
+    padding: 0 9px;
+    font-size: 1.1em;
+    padding-top: 1px;
+    height: 24px;
+    line-height: 24px;
+    transition: background .5s;
+  }
+  
+  body#body-element #fixed-nav-container:hover #fixed-nav .fixed-menu-start,
+  body#body-element.slide-0 #fixed-nav-container #fixed-nav .fixed-menu-start {
+    font-weight: 500;
+    height: 23px;
+    line-height: 19px;
+    padding-left: 8px;
+    border-radius: 4px 0 0 4px;
+  }
+  
+  body#body-element #fixed-nav-container:hover #fixed-nav .fixed-menu-start:after,
+  body#body-element.slide-0 #fixed-nav-container #fixed-nav .fixed-menu-start:after {
+    display: inline-block;
+    padding: 0 0 0 14px;
+    opacity: 1;
+    width: 8px;
+  }
+  
+  #body-element #fixed-nav-container:hover .fixed-menu-item  {
+    cursor: pointer;
+  }
+  
+  #body-element #fixed-nav-container:hover .fixed-menu-item:last-child  {
+    border-radius: 0 4px 4px 0;
+  }
+  
+  #body-element.slide-0 #fixed-nav-container #menu-00,
+  #body-element.slide-1 #fixed-nav-container #menu-01,
+  #body-element.slide-2 #fixed-nav-container #menu-02,
+  #body-element.slide-3 #fixed-nav-container #menu-03-anim,
+  #body-element.slide-4 #fixed-nav-container #menu-04-anim,
+  #body-element.slide-5 #fixed-nav-container #menu-05-anim,
+  #body-element.slide-6 #fixed-nav-container #menu-06-anim,
+  #body-element.slide-7 #fixed-nav-container #menu-07,
+  #body-element.slide-8 #fixed-nav-container #menu-08,
+  #body-element.slide-9 #fixed-nav-container #menu-09,
+  #body-element.slide-10 #fixed-nav-container #menu-10,
+  #body-element.slide-11 #fixed-nav-container #menu-11,
+  #body-element[uxHover=objective] #fixed-nav-container #menu-02,
+  #body-element[uxHover=understand] #fixed-nav-container #menu-03-anim,
+  #body-element[uxHover=concept] #fixed-nav-container #menu-04-anim,
+  #body-element[uxHover=develop] #fixed-nav-container #menu-05-anim,
+  #body-element[uxHover=test] #fixed-nav-container #menu-06-anim,
+  #body-element[uxHover=implement] #fixed-nav-container #menu-07 {
+    background-color: rgba(0,0,0,0.55);
+  }
+  
+  body#body-element #fixed-nav-container:hover #fixed-nav .fixed-menu-item:hover {
+    background-color: rgba(0,0,0,0.75);
+  }
+  
+  */

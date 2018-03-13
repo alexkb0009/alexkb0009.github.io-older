@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    <div>
+
+      <header class="header-background">
+
+        <div class="clearfix border-bottom-thin header-border">
+          <div class="left py-1 px-1 header-text">
+            <a class="align-middle link-primary" href="{{ site.baseurl }}/">
+              <i class="fa fa-home fa-fw"></i>
+            </a>
+          </div>
+          <ul class="list-reset right py-1 header-text font-smoothing">
+            {% include header-links.html %}
+          </ul>
+        </div>
+
+        
+
+        <div class="container mx-auto px-2 clearfix header-text">
+
+          <h1 class="h1 text-100 inline-block col-9 sm-width-full py-3 mt-0 mb-0 header-title">{{ page.title }}</h1>
+
+          <div class="clearfix mb-4 py-0">
+
+            <div class="col-6 sm-width-full left border-top-thin mt-3 mt-lg-0 table">
+                <div class="mt-2 mb-2 text-300">
+                  <i class="fa fa-fw fa-tags"></i>&nbsp; All Tags
+                </div>
+                <div class="tags-page-tag-container">
+                {% for my_page in site.pages %}
+                  {% assign url_parts = my_page.url | split: '/' %}
+                  {% if my_page.title and url_parts[1] == 'tag' %}
+                    <a class="{% if my_page.url == page.url %}active {% endif %}dark-bg portfolio-tag link tag-color-background-{{ url_parts[2] | slugify }}" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+                  {% endif %}
+                {% endfor %}
+                </div>
+            </div>
+          </div>
+
+        </div>
+      </header>
+
+      <div class="container mx-auto px-2 py-3">
+
+        {% for item in page.posts %}
+          {% include portfolio_block.html %}
+          {% if forloop.last == false %}
+          <hr class="mb-3 portfolio-block-separator"/>
+          {% endif %}
+        {% endfor %}
+        
+      </div>
+
+    </div>
+
+    {% include footer.html %}
+
+  </body>
+
+</html>

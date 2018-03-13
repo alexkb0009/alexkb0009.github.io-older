@@ -1,0 +1,92 @@
+---
+layout: default
+---
+
+{% assign related_files = site.static_files | where_exp:"f","f.path contains page.permalink" %}
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+
+<div class="images-slideshow-container">
+  <div class="images slideshow" style="opacity: 0;">
+    {% for image in related_files %}
+      {% unless image.path contains 'HIDDEN' %}
+        {% unless image.path contains '/extra/' %}
+        <div class="image-container">
+          <img src="{{ image.path }}" />
+        </div>
+        {% endunless %}
+      {% endunless %}
+    {% endfor %}
+  </div>
+</div>
+
+<article class="container px-2 mx-auto mb4" itemscope itemtype="http://schema.org/BlogPosting">
+  <h1 class="h1 text-300 col-12 sm-width-full py-2 mt-2 inline-block" itemprop="name headline">{{ page.title }}</h1>
+  <div class="col-4 sm-width-full mt-1 border-top-thin ">
+    <p class="mb-3 py-1 h4 text-300"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.years }}</time></p>
+  </div>
+
+  <div class="prose" itemprop="articleBody">
+      {{ content }}
+  </div>
+
+  {% if page.link %}
+    <div class="link-to-demo-container">
+      <a class="link-to-demo" href="{{ page.link }}" target="_blank">{{ page.link_title }}</a>
+    </div>
+  {% endif %}
+
+</article>
+
+<div class="container mx-auto px-2 py-3 mt-4 clearfix">
+  {% include previous-next.html %}
+</div>
+
+<script>
+
+window.portfolio = window.portfolio || {};
+window.portfolio.slider = {
+  'initialized' : false,
+  'jqInstance' : null
+};
+
+function initializeSlider(){
+  var opts = {
+    centerMode: true,
+    slidesToShow : 1,
+    variableWidth: true,
+    centerPadding: 10,
+    arrows: true
+  };
+
+  var $slideShowContainer = $('.images.slideshow');
+  var slideShowSlick;
+
+  console.log($slideShowContainer, slideShowSlick);
+  //setTimeout(function(){
+    //$slideShowContainer.slick('unslick');
+    
+  //}, 1000);
+  setTimeout(function(){
+    slideShowSlick = $slideShowContainer.slick(opts);
+    setTimeout(function(){
+      $slideShowContainer.slick('slickGoTo', 0);
+      setTimeout(function(){
+        $slideShowContainer.css('opacity', 1);
+        window.portfolio.slider.initialized = true;
+        window.portfolio.slider.jqInstance = $slideShowContainer;
+      }, 350);
+    }, 100);
+  }, 50);
+  
+  
+}
+
+$(window).on('load', initializeSlider);
+//$(document).ready(initializeSlider);
+
+</script>

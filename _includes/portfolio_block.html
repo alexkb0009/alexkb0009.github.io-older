@@ -1,0 +1,45 @@
+<!-- Renders post date, title, and snippet of text. -->
+
+{% capture related_path %}{{item.permalink}}{% endcapture %}
+
+{% assign related_files = site.static_files | where_exp:"f","f.path contains item.permalink" | where_exp:"f","f.path contains item.permalink" %}
+{% assign thumbfile = '' %}
+{% for f in related_files %}
+  {% if thumbfile == '' %}
+  {% unless f.path contains '/extra/' %}
+    {% assign thumbfile = f %}
+  {% endunless %}
+  {% endif %}
+{% endfor %}
+<div class="py-2 mb-3 prose clearfix portfolio-block">
+
+  <div class="col-3 right sm-width-full mb-2 mb-lg-0">
+    <div class="imageholder">
+      <a href="{{ item.url | prepend: site.baseurl }}" images="[{% for img in related_files %}{ "src" : "{{ img.path }}" },{% endfor %}]">
+        {% image portfolio_thumbnail {{ related_files[0].path }} style="opacity: 1;" %}
+      </a>
+    </div>
+  </div>
+
+  <div class="col-9 left sm-width-full">
+
+    <h2 class="h2 lh-condensed col-10 mt-0 mb-2">
+      <a class="link-primary" href="{{ item.url | prepend: site.baseurl }}">{{ item.title }}</a>
+    </h2>
+    <p>{{ item.content | strip_html | truncatewords:30 }}</p>
+
+    <a class="years no-underline h5" title="{{ item.url | prepend: item.baseurl }}" href="{{ item.url | prepend: site.baseurl }}">{{ item.years }}</a>
+    <div>
+      {% for tag in item.tags %}
+        <a class="inline-block portfolio-tag tag tag-color-background-{{ tag | slugify }}" name="{{ tag }}" href="/tag/{{ tag | slugify }}">{{ tag }}</a>
+      {% endfor %}
+    </div>
+
+  </div>
+
+
+
+
+  
+
+</div>

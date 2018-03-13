@@ -1,0 +1,96 @@
+
+// Font family
+$body-font-family: "Roboto", "Helvetica Neue", Arial, sans-serif;
+$body-font-size: 16px;
+$prose-font-size: 17px;
+
+
+// Type scale
+$h0-mobile: 64px;
+$h0-desktop: 128px;
+
+$h1-size: 40px !default;
+$h2-size: 32px !default;
+$h3-size: 24px !default;
+$h4-size: 20px !default;
+$h5-size: 16px !default;
+$h6-size: 12px !default;
+
+// Default border color
+$color-border: #ddd !default;
+
+// Container width
+$container-width: 64em;
+
+// Large breakpoint
+$breakpoint-lg: 52em;
+
+// Spacing unit
+$spacer: 8px !default;
+
+// Spacing scale
+$spacer-1: $spacer !default; // 8px
+$spacer-2: ($spacer * 2) !default; // 16px
+$spacer-3: ($spacer * 4) !default; // 32px
+$spacer-4: ($spacer * 8) !default; // 64px
+
+// Tag Colors
+$tag-colors: (
+    3d: #000671,
+    algorithm: #1777b6,
+    algorithms: #1777b6,
+    api: #777777,
+    aws: #e57912,
+    backbone: #0270b5,
+    backbone-js: #0270b5,
+    blender: #616974,
+    bolt-cms: #769edd,
+    c: #2b90e5,
+    c-sharp: #2b90e5,
+    canvas: #77df61,
+    css3: #1fb6b0,
+    css: #1fb6b0,
+    data-visualization: #da5e1a,
+    d3: #f6874b,
+    d3-js: #f6874b,
+    doctrine: #372b72,
+    drupal: #0678BE,
+    elasticsearch: #f9b10e,
+    email: #3ff5b7,
+    game: #21c012,
+    graphic-design: #39cb9a,
+    grasshopper: #676c95,
+    finance: #305ce7,
+    foundation: #1D92CF,
+    in-development: #30c33a,
+    incomplete : #30c33a,
+    ios: #5887e3,
+    javascript: #E8AC09,
+    jinja2: #8441dc,
+    maps: #247ab7,
+    masonry: #954e96,
+    mobile: #89af7c,
+    mongodb: #69B241,
+    net: #16168f,
+    node-js: #e13fcc,
+    platform: #7397cc,
+    photoshop: #1473e6,
+    php: #777BB4,
+    pyramid: #ab2431,
+    python: #2B5B84,
+    openshift: #CC0000,
+    react-js: #61dafb,
+    react-native: #05A5D1,
+    redis: #D92B21,
+    restful: #6c36b9,
+    rhino: #4b465d,
+    saas: #273300,
+    silex: #4c2fbe,
+    twig: #BACF29,
+    typescript: #007ACC,
+    websockets: #cea439,
+    windows: #2b90e5,
+    xaml: #28fe48
+)
+
+//$tags: 3d algorithms api backbone blender bolt-cms c-sharp canvas css3 css doctrine drupal email game graphic-design grasshopper finance foundation in-development
