@@ -1,0 +1,274 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background: #eee;
+    font-family: "Segoe UI", "Segoe WP", "Helvetica Neue", sans-serif;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family:  "Segoe UI", "Segoe WP", "Helvetica Neue", sans-serif;
+  }
+  
+  div#header-bar {
+    height: 64px;
+    /* background: #ddd; */
+    position: absolute;
+  }
+  
+  div#header-bar .container {
+    -webkit-perspective: 200px;
+    perspective: 200px;
+    display: inline-block;
+    position: relative;
+    z-index: 10;
+  }
+  
+  div#header-bar #title {
+    margin: 0;
+    line-height: 64px;
+    font-weight: bold;
+    font-weight: normal;
+    font-size: 2em;
+    padding: 0 20px;
+    font-family: sans-serif;
+    transition: 1s;
+    transform: skew(0deg, 0deg) rotateX(0deg);
+    display: inline-block;
+  }
+  
+  div#header-bar #title span.lighter {
+    color: rgba(0,0,0,0.06);
+    font-weight: 400;
+  }
+  /*
+  div#header-bar #title:hover {
+    transform: rotateY(7deg);
+  }
+  */
+  
+  #front-page-canvas {
+    margin: 0 auto;
+    display: block;
+    position: absolute;
+  }
+  
+  /** UI **/
+  
+  #frontContainer {
+    position: relative;
+    visibility: visible;
+  }
+  
+  body:not(.introcomplete) #frontContainer {
+    visibility: hidden;
+  }
+  
+  #frontContainer h4#f_locationLabel {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1.2s;
+    margin: 0;
+    color: rgba(0,0,0,0.4);
+    bottom: 10px;
+    left: 12px;
+  }
+  
+  #frontContainer #f_menu {
+    background: #e7e7e7;
+    background: rgba(0,0,0,0.04);
+    position: absolute;
+    opacity: 0;
+    transition: 1.2s;
+  }
+  
+  #frontContainer #f_menu > ul {
+    clear: both;
+    padding: 0;
+    list-style-type: none;
+    margin: 0;
+  }
+  
+  #frontContainer #f_menu >  ul:before,
+  #frontContainer #f_menu > ul:after {
+    content: "";
+    display: table;
+    position: relative;
+    clear: both;
+    float: none;
+  }
+  
+  #frontContainer #f_menu > ul > li {
+    float: left;
+    line-height: 48px;
+  }
+  
+  #frontContainer #f_menu > ul > li a {
+    padding: 0 16px;
+    text-decoration: none;
+    line-height: inherit;
+    color: #000;
+    display: block;
+  }
+  #frontContainer #f_menu > ul > li a > span {
+    margin-left: 12px;
+  }
+  
+  @media screen and (max-width: 400px) {
+    #frontContainer #f_menu > ul > li:not(.social) {
+      display: block;
+      float: none;
+      clear: both;
+    }  
+  }
+  
+  #frontContainer #f_menu > ul > li a:hover {
+    background-color: rgba(0,0,0,0.05);
+  }
+  
+  #frontContainer #f_menu > ul > li > ul li {
+    line-height: 40px;
+  }
+  #frontContainer #f_menu > ul > li > ul#emailDropdown {
+    min-width: 275px;
+  }
+  #frontContainer #f_latestItems {
+    position: absolute;
+    opacity: 0;
+    padding: 5px;
+    transition: 1.2s, opacity 1.8s 1.2s, background-color 3s;
+    /* background-color: rgba(238, 238, 238, 0.8); */
+  }
+  
+  #frontContainer #f_latestItems > h3 {
+    margin: 0;
+    /* padding-bottom: 10px; */
+    /* border-bottom: 1px dotted #ccc; */
+    font-weight: 500;
+  }
+  
+  #frontContainer #f_latestItems > h3 > a {
+      color: #000;
+  }
+  
+  #frontContainer #f_latestItems > h3 > a:hover {
+      color: #999;
+  }
+  
+  #frontContainer #f_latestItems > ul {
+    padding-right: 20px;
+    margin: 10px 0;
+    margin-left: 1.5rem;
+  }
+  
+  #frontContainer #f_latestItems  > ul > li {
+    margin: 5px 0;
+  }
+  
+  #frontContainer #f_latestItems  > ul > li a {
+    text-decoration: none;
+    color: #777;
+  }
+  
+  #frontContainer #f_latestItems  > ul > li a:hover {
+    color: #000;
+  }
+  
+  #frontContainer #f_latestItems  > ul > li a:hover:after {
+    content: "\f061";
+    font: normal normal normal 14px/1 FontAwesome; 
+    margin-left: 10px;
+    margin-right: 5px;
+    position: relative;
+    top: -1px;
+  }
+  
+  body.introcomplete #frontContainer h4#f_locationLabel,
+  body.introcomplete #frontContainer #f_menu,
+  body.introcomplete #frontContainer #f_latestItems {
+    opacity: 1;
+  }
+  
+  #bgarea {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    overflow: hidden;
+  }
+  /*
+  body.introcomplete #bgarea {
+    background-color: #bfbfbf;
+    background-color: rgb(200, 200, 200);
+    transition: background-color 3s;
+  }
+  
+  body.introcomplete #frontContainer #f_latestItems {
+    background-color: rgba(200, 200, 200, 0.5);
+    transition: 1.2s, opacity 1.5s .5s, background 1.5s 3s;
+  }
+  */
+  /*
+  #bgarea .snow {
+    position: absolute;
+    background-image: 
+      radial-gradient(3px 3px at 20px 30px, rgba(255,255,255,1), rgba(0,0,0,0)),
+      radial-gradient(2px 2px at 40px 70px, rgba(255,255,255,1), rgba(0,0,0,0)),
+      radial-gradient(3px 3px at 50px 160px, rgba(255,255,255,0.8), rgba(0,0,0,0)),
+      radial-gradient(2px 2px at 90px 40px, rgba(255,255,255,1), rgba(0,0,0,0)),
+      radial-gradient(2px 2px at 130px 80px, rgba(255,255,255,1), rgba(0,0,0,0)),
+      radial-gradient(2px 2px at 170px 120px, rgba(255,255,255,0.8), rgba(0,0,0,0)),
+      radial-gradient(2px 2px at 210px 74px, rgba(255,255,255,0.8), rgba(0,0,0,0)),
+      radial-gradient(2px 2px at 240px 90px, rgba(255,255,255,0.8), rgba(0,0,0,0)),
+      radial-gradient(3px 3px at 270px 120px, rgba(255,255,255,1), rgba(0,0,0,0)),
+      radial-gradient(2px 2px at 360px 80px, rgba(255,255,255,1), rgba(0,0,0,0)),
+      radial-gradient(3px 3px at 370px 110px, rgba(255,255,255,1), rgba(0,0,0,0)),
+      radial-gradient(2px 2px at 200px 105px, rgba(255,255,255,1), rgba(0,0,0,0)),
+      radial-gradient(2px 2px at 400px 120px, rgba(255,255,255,1), rgba(0,0,0,0)),
+      radial-gradient(3px 3px at 360px 200px, rgba(255,255,255,1), rgba(0,0,0,0));
+    background-repeat: repeat;
+    background-size: 500px 240px;
+    background-position: 50% 50%;
+    animation: snow 12s infinite;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: top center;
+  }
+  
+  #bgarea .snow:nth-child(1) {
+    background-position: 50% -25%;
+    animation-delay: 0s;
+  }
+  
+  #bgarea .snow:nth-child(2) {
+    background-position: 30% -50%;
+    animation-delay: 4s;
+  }
+  
+  #bgarea .snow:nth-child(3) {
+    background-position: 70% -25%;
+    animation-delay: 8s;
+  }
+  
+  @keyframes snow {
+    0% {
+      opacity: 0;
+      transform: scale(0.75) translate(0px, 0px);
+      animation-timing-function: ease-in;
+    } 
+    85% {
+      opacity: 1;
+      animation-timing-function: linear;
+    }
+    100% {
+      opacity: 0;
+      transform: scale(1.5) translate(0, 150px);
+    }
+  }
+  
+  */

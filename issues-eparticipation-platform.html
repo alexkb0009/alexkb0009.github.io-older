@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Issues - eParticipation Platform</title>
+  <meta name="description" content="My Issues (name not final) is a prototypical citizen-centric e-participation platform which aims to enhance the quantity and quality of communication between...">
+  <link rel="shortcut icon" href="/assets/logo_initials_tiny_yellow.png">
+  
+  
+  <link rel="stylesheet" href="http://localhost:4000/assets/style.css">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,400italic,300italic,300,100,500,700' rel='stylesheet' type='text/css'>
+
+  <link rel="canonical" href="http://localhost:4000/issues-eparticipation-platform">
+  <link rel="alternate" type="application/rss+xml" title="Past Work" href="http://localhost:4000/feed.xml">
+  <!--<script async defer src="https://buttons.github.io/buttons.js"></script>-->
+
+</head>
+
+
+  <body>
+
+    <header class="border-bottom-thin clearfix">
+  <div class="left sm-width-full py-1 px-2 mt-1 mt-lg-0">
+    <a class="align-middle link-primary" href="/">
+      <i class="fa fa-home fa-fw"></i>
+    </a>
+  </div>
+  <div class="right sm-width-full">
+    <ul class="list-reset mt-lg-1 mb-2 mb-lg-1">
+      <li class="inline-block">
+    <a class="align-middle link-primary header-link mr-2" href="/about">About</a>
+</li>
+    </ul>
+  </div>
+</header>
+
+
+    <div>
+      
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+
+<div class="images-slideshow-container">
+  <div class="images slideshow" style="opacity: 0;">
+    
+      
+        
+        <div class="image-container">
+          <img src="/assets/images/issues-eparticipation-platform/myissues1.jpg" />
+        </div>
+        
+      
+    
+      
+        
+        <div class="image-container">
+          <img src="/assets/images/issues-eparticipation-platform/myissues2.jpg" />
+        </div>
+        
+      
+    
+      
+        
+        <div class="image-container">
+          <img src="/assets/images/issues-eparticipation-platform/myissues3.jpg" />
+        </div>
+        
+      
+    
+      
+        
+        <div class="image-container">
+          <img src="/assets/images/issues-eparticipation-platform/myissues4.jpg" />
+        </div>
+        
+      
+    
+      
+        
+        <div class="image-container">
+          <img src="/assets/images/issues-eparticipation-platform/myissues5.jpg" />
+        </div>
+        
+      
+    
+      
+        
+        <div class="image-container">
+          <img src="/assets/images/issues-eparticipation-platform/myissues6.jpg" />
+        </div>
+        
+      
+    
+      
+        
+        <div class="image-container">
+          <img src="/assets/images/issues-eparticipation-platform/myissues7.jpg" />
+        </div>
+        
+      
+    
+      
+        
+        <div class="image-container">
+          <img src="/assets/images/issues-eparticipation-platform/myissues8.jpg" />
+        </div>
+        
+      
+    
+      
+        
+        <div class="image-container">
+          <img src="/assets/images/issues-eparticipation-platform/myissues9.jpg" />
+        </div>
+        
+      
+    
+  </div>
+</div>
+
+<article class="container px-2 mx-auto mb4" itemscope itemtype="http://schema.org/BlogPosting">
+  <h1 class="h1 text-300 col-12 sm-width-full py-2 mt-2 inline-block" itemprop="name headline">Issues - eParticipation Platform</h1>
+  <div class="col-4 sm-width-full mt-1 border-top-thin ">
+    <p class="mb-3 py-1 h4 text-300"><time datetime="2010-01-20T00:00:00-05:00" itemprop="datePublished">2014-2015</time></p>
+  </div>
+
+  <div class="prose" itemprop="articleBody">
+      <p><em>My Issues</em> (name not final) is a prototypical citizen-centric e-participation platform which aims to enhance the quantity and quality of communication between citizens and their representatives in legislature. This project is the outcome of my academic thesis which began in 2014 and development of it is still on-going during spare time. Contact if would like a copy of the thesis book, covering conceptual design and development of the platform in much greater depth.</p>
+
+<h3 id="technology">Technology</h3>
+
+<p>Platform backend is written in Python, aided by the Bottle.py microframework. Backend presents end-points for pages such as home, issue, and topic listings, and the remainder of back-end functionality is accessed through RESTful JSON API, as well a couple of simple non-JSON API endpoints. Page layout is built using Jinja2 (templating engine for Python) + Foundation (front-end framework), with majority of interactivity being implemented in JavaScript as part of Backbone.js models and views. The application instances of the platform can be scaled horizontally to accomodate any number of users and is set to do so through Red Hat’s OpenShift PaaS which runs on Amazon Web Services EC2. All application instances share a connection to a MongoDB database for persistent storage - user accounts, issues, votes, etc. and a connection to a Redis database which currently provides session storage and, eventually, caching. Application instances may also be run as Windows services with aid of the PyWin32 module.</p>
+
+<h3 id="background--extended-description">Background &amp; Extended Description</h3>
+<p>The platform seeks to increase representation of any constituency’s interests to constituency’s legislature by leveraging evolving concepts of user experience (UX) design and collaborative content generation in the field of software development. Ideally, the platform will counter-balance the influence of special-interest lobbyists – many of whom are not direct members of the constituency of the legislator which they are lobbying to. In a dangerous plausible scenario, a lobbyist’s interests might be more closely aligned with interests of a foreign power than with interests of the constituency.</p>
+
+<p>Encroachment on a constituency’s representatives is sometimes evident in the lobbying efforts of resourceful entities. U.S. Representative Tony Cárdenas, in context of discussing the disproportionate influence of Comcast Corporation’s lobbying efforts on legislative decision-making, resolves via a Reddit post that while decision-making based solely on positions presented by lobbyists is rare, “Hearing people who are completely sure of themselves making a case helps me see parts of it I may not have seen before.”[1] Cárdenas also demonstrates a difficulty in identifying preferences of constituencies: “I don’t get to be black and white. I have 750,000 shades of greyscale in my district…”[2] Disproportionate representation of interests thus appears to be catalyzed in part by legislators’ lack of access to definite comprehensible information about their constituencies’ preferences.[3] Additionally, much of the population arguably perceives real and imagined hindrances to individual participation in the form of a large &amp; increasing constituent–representative ratio (average of over 738,000-to-1 for U.S. House of Representatives)[4] and depressed availability of time &amp; interest to allocate to civic participation relative to immediate needs[5].</p>
+
+<p>The My Issues platform adapts concepts exemplified in precedent online collaborative and social platforms to transparently aggregate and present constituencies’ preferences regarding relevant issues as well as possible responses to those issues. Reddit’s voting &amp; ranking mechanism informs a similar design in My Issues for aggregating constituent preferences while Wikipedia’s mechanism for iteratively revising an article to reach and maintain consensus of article’s content and structure is adapted for issue definitions. Simple-to-use, rapidly-loading, and engaging user experiences in popular social media platforms such as Twitter and Facebook inform UX design in My Issues and simultaneously serve as conduits for cascading the visibility of the collaboratively-defined issues and consequently, visibility of and participation on the My Issues platform itself. Further work includes iterating on elements of platform design in response to feedback – e.g. mechanism function, UX, ‘branding’ &amp; other details – and implementing alongside already-planned components – e.g. constituent authentication, settings pages.</p>
+
+<h4 id="notes">Notes</h4>
+<p>[1] Cárdenas, Tony, “Proud Today That I Became One of the First House Members Vocally AGAINST Comcast/Time-Warner,” Reddit, February 18, 2015, accessed July 4, 2015, https://www.reddit.com/r/technology/comments/2wcoxy/proud_today_that_i_became_one_of_the_first_house/copx5zn.</p>
+
+<p>[2] Ibid.</p>
+
+<p>[3] As well as lack of access by other legislatively influential entities, e.g. politicians, business leaders, media, and other constituents.</p>
+
+<p>[4] The U.S. House of Representatives is limited by law to 435 members, while the overall population of the United States (321,288,000 – on July 14, 2015 at 1:13PM EST) is currently increasing at a rate of one (+1) every twelve seconds. “The House Explained,” United States House of Representatives, accessed November 18, 2014, http://www.house.gov/content/learn/. “Population Clock,” United States Census Bureau, accessed July 14, 2015, http://www.census.gov/popclock/.</p>
+
+<p>[5] E.g. shopping for groceries &amp; essential products, taking care of &amp; educating children, household maintenance &amp; upkeep.</p>
+
+  </div>
+
+  
+    <div class="link-to-demo-container">
+      <a class="link-to-demo" href="https://github.com/alexkb0009/issues-platform" target="_blank">GitHub Repo</a>
+    </div>
+  
+
+</article>
+
+<div class="container mx-auto px-2 py-3 mt-4 clearfix">
+  <!-- Use if you want to show previous and next for all posts. -->
+
+
+
+  <div class="col-4 sm-width-full left mr-lg-4 mt-3">
+    <a class="no-underline border-top-thin py-1 block" href="http://localhost:4000/personal-portfolio-splashpage">
+      <span class="h5 bold text-accent">Previous</span>
+      <p class="bold h3 link-primary mb-1">Personal Portfolio - Splash Page</p>
+      <p>A JavaScript Canvas (HTML5) introduction animation to the old version of my portfolio. Created as an excuse to play with...</p>
+    </a>
+  </div>
+  
+  
+  <div class="col-4 sm-width-full left mt-3">
+    <a class="no-underline border-top-thin py-1 block" href="http://localhost:4000/intelagent-real-estate-platform">
+      <span class="h5 bold text-accent">Next</span>
+      <p class="bold h3 link-primary mb-1">IntelAgent - Real Estate Platform</p>
+      <p>An in-progress project for connecting those looking to buy beautiful homes to real estate agents. Horizontally scalable with OpenShift PaaS,...</p>
+    </a>
+  </div>
+
+
+</div>
+
+<script>
+
+window.portfolio = window.portfolio || {};
+window.portfolio.slider = {
+  'initialized' : false,
+  'jqInstance' : null
+};
+
+function initializeSlider(){
+  var opts = {
+    centerMode: true,
+    slidesToShow : 1,
+    variableWidth: true,
+    centerPadding: 10,
+    arrows: true
+  };
+
+  var $slideShowContainer = $('.images.slideshow');
+  var slideShowSlick;
+
+  console.log($slideShowContainer, slideShowSlick);
+  //setTimeout(function(){
+    //$slideShowContainer.slick('unslick');
+    
+  //}, 1000);
+  setTimeout(function(){
+    slideShowSlick = $slideShowContainer.slick(opts);
+    setTimeout(function(){
+      $slideShowContainer.slick('slickGoTo', 0);
+      setTimeout(function(){
+        $slideShowContainer.css('opacity', 1);
+        window.portfolio.slider.initialized = true;
+        window.portfolio.slider.jqInstance = $slideShowContainer;
+      }, 350);
+    }, 100);
+  }, 50);
+  
+  
+}
+
+$(window).on('load', initializeSlider);
+//$(document).ready(initializeSlider);
+
+</script>
+
+    </div>
+
+    <div class="border-top-thin clearfix mt-2 mt-lg-4">
+  <div class="container mx-auto px-2">
+    <p class="col-8 sm-width-full left py-2 mb-0">
+      <small><i class="fa fa-copyright"></i> Alexander Balashov 2015 - 2017</small>
+    </p>
+    <!--
+    <ul class="list-reset right clearfix sm-width-full py-2 mb-2 mb-lg-0">
+      <li class="inline-block">
+        <a class="github-button" href="https://github.com/alexkb0009/" data-icon="octicon-star" data-count-href="alexkb0009//stargazers" data-count-api="/repos/alexkb0009/#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star alexkb0009/ on GitHub">Star</a>
+      </li>
+    </ul>
+    -->
+  </div>
+</div>
+
+
+  </body>
+
+</html>
