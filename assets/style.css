@@ -3571,3 +3571,81 @@ code {
   .link-primary:hover {
     color: #ff7200;
     text-decoration: none; }
+
+@media screen {
+  .print-only {
+    display: none; } }
+@media print {
+  .no-print,
+  .noprint {
+    display: none; }
+
+  .container {
+    max-width: 64rem; }
+
+  .prose,
+  .prose ul,
+  .prose p,
+  .prose ol {
+    font-size: 11pt; }
+
+  article > .prose.py-3.mb-4 {
+    padding-top: 0 !important;
+    margin-bottom: 0 !important;
+    padding-bottom: 12pt !important; }
+
+  .prose li {
+    margin-bottom: 4pt; }
+
+  h1 {
+    font-size: 24pt; }
+
+  h2 {
+    font-size: 20pt; }
+
+  h3 {
+    font-size: 17pt; }
+
+  h4 {
+    font-size: 13pt;
+    font-size: 12.5pt; }
+
+  .mb-1 {
+    margin-bottom: 4pt; }
+
+  .mb-2 {
+    margin-bottom: 8pt; }
+
+  .mb-3 {
+    margin-bottom: 16pt; }
+
+  .mb-4 {
+    margin-bottom: 24pt; }
+
+  .mb-5 {
+    margin-bottom: 36pt; }
+
+  .mt-1 {
+    margin-top: 4pt; }
+
+  .mt-2 {
+    margin-top: 8pt; }
+
+  .mt-3 {
+    margin-top: 16pt; }
+
+  .mt-4 {
+    margin-top: 24pt; }
+
+  .mt-5 {
+    margin-top: 36pt; }
+
+  .footer.mt-lg-4 {
+    margin-top: 0; }
+
+  /*
+      .footer .col-8.py-2.sm-width-full {
+          padding-top: 5pt;
+          padding-bottom: 5pt;
+      }
+  */ }

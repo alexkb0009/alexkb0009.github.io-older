@@ -24,7 +24,7 @@
 
   <body>
 
-    <header class="border-bottom-thin clearfix">
+    <header class="border-bottom-thin clearfix no-print">
   <div class="left sm-width-full py-1 px-2 mt-1 mt-lg-0">
     <a class="align-middle link-primary" href="/">
       <i class="fa fa-home fa-fw"></i>
@@ -42,14 +42,22 @@
 
     <div>
       <article class="container mx-auto px-2 mt2 mb4">
-  <header>
+  <header class="no-print">
     <h1 class="py-2 mt-1 text-200">About</h1>
   </header>
   <div class="col-4 sm-width-full border-top-thin">
   </div>
 
   <div class="prose mb-4 py-3">
-    <h2 class="text-300 mb-4 mt-3" id="skills--experience">Skills &amp; Experience</h2>
+    <h2 class="print-only mb-4 text-400">
+    Alexander Balashov
+    <br />
+    <small class="text-300">
+        <a href="https://alexkb0009.github.io/">https://alexkb0009.github.io</a>
+    </small>
+</h2>
+
+<h2 class="text-300 mb-4 mt-3" id="skills--experience">Skills &amp; Experience</h2>
 
 <h4 class="text-500" id="front-end-design--development-with-html5-html--css3--js">Front-end design &amp; development with <a href="http://wikipedia.org/wiki/html5">HTML5</a> (HTML + <a href="http://wikipedia.org/wiki/css">CSS3</a> + JS)</h4>
 <ul>
@@ -109,18 +117,20 @@
 <h4 class="mb-0 mt-3 text-500" id="harvard-medical-school--bioinformatics"><a href="https://dbmi.hms.harvard.edu">Harvard Medical School / Bioinformatics</a></h4>
 <h5 class="mt-0 mb-1 text-400" id="2016---present">2016 - Present</h5>
 <ul>
-  <li>Lead front-end developer for the <a href="https://data.4dnucleome.org">4D Data Nucleome Portal</a>, which runs as a single-page application (see portfolio).</li>
-  <li>Created and iterated on variety of views and overall front-end application design in <a href="https://facebook.github.io/react/">React.js</a>.</li>
-  <li>Trained and on-boarded new employees in front-end development and iteration.</li>
+  <li>Lead front-end developer for the <a href="https://data.4dnucleome.org">4D Data Nucleome Portal</a>, which runs a single-page application (see portfolio).</li>
+  <li>Created and iterated on variety of views and overall front-end design in <a href="https://facebook.github.io/react/">React.js</a>.</li>
   <li>Utilized PostgreSQL as master canonical database, and ElasticSearch for searching and as a fast-read cache.</li>
   <li>Utilized ElasticSearch to aggregate large quantities of portal metadata to then visualize with React.js and D3.</li>
-  <li>Created divide-and-conquer tracing algorithm to recursively build a provenance graph of files and the workflows which generated them which is then visualized as a pipeline on the front-end with React and selected D3 functions (see portfolio).</li>
+  <li>Created divide-and-conquer tracing algorithm to recursively build a provenance graph of files and the workflows which generated them.</li>
+  <li>Visualized file provenance graphs and workflow pipelines – defined using <a href="https://www.commonwl.org/">CWL</a> – on the front-end with React and selected <a href="https://d3js.org">D3</a> functions (see portfolio).</li>
+  <li>Trained and helped on-board new employees in front-end development and iteration with React.js.</li>
+  <li>Fully open-source and available at <a href="https://github.com/4dn-dcic/fourfront">github.com/4dn-dcic/fourfront</a>.</li>
 </ul>
 
 <h4 class="mb-0 mt-3 text-500" id="intelagent-startup">IntelAgent (Startup)</h4>
 <h5 class="mt-0 mb-1 text-400" id="2016-part-time">2016 Part-Time</h5>
 <ul>
-  <li>As lead developer, created a cross-platform application in React Native to connect real estate agents with purchasers.</li>
+  <li>Led development on a cross-platform application in React Native to connect real estate agents with purchasers.</li>
   <li>Developed a web front-end in <a href="https://facebook.github.io/react/">React.js</a> as first step and prototype for mobile application design (see portfolio).</li>
   <li>Iterated on mobile app design with feedback from shareholders.</li>
   <li>Developed basic API using Python3 and <a href="http://mongodb.org/">MongoDB</a> NoSQL DB.</li>
@@ -174,7 +184,7 @@
 </ul>
 
 <div class="mt-4">
-<small>Last updated on Wednesday, December 27th, 2017. Ask for code samples.</small>
+<small>Last updated on Wednesday, September 5th, 2018. Ask for code samples and/or references.</small>
 </div>
 
   </div>
@@ -182,10 +192,13 @@
 
     </div>
 
-    <div class="border-top-thin clearfix mt-2 mt-lg-4">
+    <div class="border-top-thin clearfix mt-2 mt-lg-4 footer">
   <div class="container mx-auto px-2">
-    <p class="col-8 sm-width-full left py-2 mb-0">
-      <small><i class="fa fa-copyright"></i> Alexander Balashov 2015 - 2017</small>
+    <p class="col-8 sm-width-full left py-2 mb-0 no-print">
+      <small><i class="fa fa-copyright"></i> Alexander Balashov 2015 - 2018</small>
+    </p>
+    <p class="col-8 sm-width-full left py-2 mb-0 print-only">
+      <small>Printed from <a href="https://alexkb0009.github.io//about/">https://alexkb0009.github.io//about/</a></small>
     </p>
     <!--
     <ul class="list-reset right clearfix sm-width-full py-2 mb-2 mb-lg-0">
