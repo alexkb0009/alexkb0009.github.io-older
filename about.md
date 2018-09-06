@@ -4,7 +4,13 @@ title: About
 permalink: /about/
 ---
 
-
+<h2 class="print-only mb-4 text-400">
+    Alexander Balashov
+    <br/>
+    <small class="text-300">
+        <a href="https://alexkb0009.github.io/">https://alexkb0009.github.io</a>
+    </small>
+</h2>
 
 ## Skills & Experience
 {:.text-300.mb-4.mt-3}
@@ -62,19 +68,21 @@ permalink: /about/
 {:.mb-0.mt-3.text-500}
 ##### 2016 - Present
 {:.mt-0.mb-1.text-400}
-- Lead front-end developer for the [4D Data Nucleome Portal](https://data.4dnucleome.org), which runs as a single-page application (see portfolio).
-- Created and iterated on variety of views and overall front-end application design in [React.js](https://facebook.github.io/react/).
-- Trained and on-boarded new employees in front-end development and iteration.
+- Lead front-end developer for the [4D Data Nucleome Portal](https://data.4dnucleome.org), which runs a single-page application (see portfolio).
+- Created and iterated on variety of views and overall front-end design in [React.js](https://facebook.github.io/react/).
 - Utilized PostgreSQL as master canonical database, and ElasticSearch for searching and as a fast-read cache.
 - Utilized ElasticSearch to aggregate large quantities of portal metadata to then visualize with React.js and D3.
-- Created divide-and-conquer tracing algorithm to recursively build a provenance graph of files and the workflows which generated them which is then visualized as a pipeline on the front-end with React and selected D3 functions (see portfolio).
+- Created divide-and-conquer tracing algorithm to recursively build a provenance graph of files and the workflows which generated them.
+- Visualized file provenance graphs and workflow pipelines -- defined using [CWL](https://www.commonwl.org/) -- on the front-end with React and selected [D3](https://d3js.org) functions (see portfolio).
+- Trained and helped on-board new employees in front-end development and iteration with React.js.
+- Fully open-source and available at [github.com/4dn-dcic/fourfront](https://github.com/4dn-dcic/fourfront).
 
 
 #### IntelAgent (Startup)
 {:.mb-0.mt-3.text-500}
 ##### 2016 Part-Time
 {:.mt-0.mb-1.text-400}
-- As lead developer, created a cross-platform application in React Native to connect real estate agents with purchasers.
+- Led development on a cross-platform application in React Native to connect real estate agents with purchasers.
 - Developed a web front-end in [React.js](https://facebook.github.io/react/) as first step and prototype for mobile application design (see portfolio).
 - Iterated on mobile app design with feedback from shareholders.
 - Developed basic API using Python3 and [MongoDB](http://mongodb.org/) NoSQL DB.
@@ -130,5 +138,5 @@ permalink: /about/
 - 800/600/650 Math/Reading/Writing SAT Scores (2008)
 
 <div class="mt-4">
-<small>Last updated on Wednesday, December 27th, 2017. Ask for code samples.</small>
+<small>Last updated on Wednesday, September 5th, 2018. Ask for code samples and/or references.</small>
 </div>
