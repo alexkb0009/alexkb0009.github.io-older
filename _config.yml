@@ -36,6 +36,7 @@ defaults:
 # Build settings
 markdown: kramdown
 highlighter: true
+destination: ./../alexkb0009.github.io_master
 #theme: minima
 theme: jekyll-swiss
 theme_color: black

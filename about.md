@@ -43,7 +43,7 @@ permalink: /about/
 #### Data modeling with NoSQL & relational databases
 {:.text-500}
 - MySQL (+ [MariaDB](http://mariadb.org/), [SQLite](https://en.wikipedia.org/wiki/SQLite), [PostgreSQL](https://en.wikipedia.org/wiki/PostgreSQL); [SQL](https://en.wikipedia.org/wiki/SQL) language), [MongoDB](http://mongodb.org/), [Redis](http://redis.io/), filesystem + text files (e.g. CSVs), and client storage (cookies, localStorage).
-- Some experience with [ElasticSearch](https://en.wikipedia.org/wiki/Elasticsearch).
+- Experience with [ElasticSearch](https://en.wikipedia.org/wiki/Elasticsearch), including writing aggregation requests for large datasets and transforming responses for front-end visualization and creating API endpoint(s) for searching.
 
 #### Visual Design, CAD, and 3D Modelling
 {:.text-500}
@@ -57,6 +57,29 @@ permalink: /about/
 
 ## Professional Work
 {:.text-300.mt-4.mb-4}
+
+#### [Harvard Medical School / Bioinformatics](https://dbmi.hms.harvard.edu)
+{:.mb-0.mt-3.text-500}
+##### 2016 - Present
+{:.mt-0.mb-1.text-400}
+- Lead front-end developer for the [4D Data Nucleome Portal](https://data.4dnucleome.org), which runs as a single-page application (see portfolio).
+- Created and iterated on variety of views and overall front-end application design in [React.js](https://facebook.github.io/react/).
+- Trained and on-boarded new employees in front-end development and iteration.
+- Utilized PostgreSQL as master canonical database, and ElasticSearch for searching and as a fast-read cache.
+- Utilized ElasticSearch to aggregate large quantities of portal metadata to then visualize with React.js and D3.
+- Created divide-and-conquer tracing algorithm to recursively build a provenance graph of files and the workflows which generated them which is then visualized as a pipeline on the front-end with React and selected D3 functions (see portfolio).
+
+
+#### IntelAgent (Startup)
+{:.mb-0.mt-3.text-500}
+##### 2016 Part-Time
+{:.mt-0.mb-1.text-400}
+- As lead developer, created a cross-platform application in React Native to connect real estate agents with purchasers.
+- Developed a web front-end in [React.js](https://facebook.github.io/react/) as first step and prototype for mobile application design (see portfolio).
+- Iterated on mobile app design with feedback from shareholders.
+- Developed basic API using Python3 and [MongoDB](http://mongodb.org/) NoSQL DB.
+- Utilized WebSockets with pub-sub for real-time agent-buyer chatting, using a Python3 tornado server.
+
 
 #### [Integrated Computer Solutions, Inc.](https://ics.com)
 {:.mb-0.mt-3.text-500}
