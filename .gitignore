@@ -1,3 +1,5 @@
 _site/
 .sass-cache/
 .jekyll-metadata
+/ja-ext-old
+.DS_Store
