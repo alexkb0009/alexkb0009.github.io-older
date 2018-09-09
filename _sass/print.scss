@@ -23,8 +23,10 @@
         font-size: 11pt;
     }
 
-    article > .prose.py-3 {
+    article > .prose.py-3.mb-4 {
         padding-top: 0 !important;
+        margin-bottom: 0 !important;
+        padding-bottom: 12pt !important;
     }
 
     .prose li {
@@ -78,6 +80,10 @@
     }
     .mt-5 {
         margin-top: 36pt;
+    }
+
+    .footer.mt-lg-4 {
+        margin-top: 0;
     }
 /*
     .footer .col-8.py-2.sm-width-full {
