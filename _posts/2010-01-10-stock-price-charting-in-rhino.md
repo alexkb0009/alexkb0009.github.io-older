@@ -3,7 +3,7 @@ title: Stock Price Charting in Rhino
 layout: post
 permalink: stock-price-charting-in-rhino
 years: 2012
-tags: ["3D", "Finance", "C#", "Rhino", "Grasshopper"]
+tags: ["3D", "Finance", "C#", "Rhino", "Grasshopper", "Data Visualization"]
 description: Something Something something
 link: 'https://vimeo.com/51163130'
 link_title : "Watch Demo (Vimeo)"

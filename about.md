@@ -25,7 +25,7 @@ permalink: /about/
 #### [JavaScript (JS)](http://wikipedia.org/wiki/javascript)
 {:.text-500}
 - 5+ years experience writing production-quality front-end JS.
-- 2+ years experience building front-ends/apps with [React.js](https://facebook.github.io/react/) (incl. 3 months w/ React Native).
+- 3+ years experience building front-ends/apps with [React.js](https://facebook.github.io/react/) (incl. 3 months w/ React Native).
 - Building & extending professional, personal, & acadamic JS-based or JS-heavy web sites and applications.
 - Building & reusing portable libraries and components in course of work.
 - Experience with [Backbone.js](http://backbonejs.org/), [ES6/ES2015](https://en.wikipedia.org/wiki/ECMAScript#6th_Edition_-_ECMAScript_2015) with [Webpack](https://webpack.js.org/), [TypeScript](http://typescriptlang.org/), [lodash](https://lodash.com/)/[Underscore](http://underscorejs.org/), [Interactive SVGs](https://developer.mozilla.org/en-US/docs/Web/SVG) & [HTML5 Canvas](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API), [D3.js](https://d3js.org/), [Babylon.js](http://babylonjs.org/) and [three.js](http://threejs.org/) ([WebGL](https://en.wikipedia.org/wiki/WebGL)), (efficient) [jQuery](http://jquery.com/), [Masonry](http://masonry.desandro.com/), [Google Maps JS API](https://developers.google.com/maps/documentation/javascript/), [Leaflets](http://leafletjs.com/) ...
