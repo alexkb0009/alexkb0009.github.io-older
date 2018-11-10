@@ -23,7 +23,7 @@ permalink: /about/
 {:.mt-0.mb-1.text-400}
 - Lead front-end developer for the [4D Data Nucleome Portal](https://data.4dnucleome.org), which runs a single-page application (see portfolio).
 - Created and iterated on variety of views and overall front-end design in [React.js](https://facebook.github.io/react/).
-- Worked PostgreSQL as a master canonical database and ElasticSearch for searching and as a fast-read cache.
+- Worked with PostgreSQL as a master canonical database and ElasticSearch for searching and as a fast-read cache.
 - Utilized ElasticSearch to aggregate large quantities of portal metadata to then visualize with React.js and D3.
 - Created a divide-and-conquer tracing algorithm to recursively trace a provenance graph of files and the workflow runs which generated them.
 - Visualized file provenance graphs and workflow pipelines -- defined using [CWLs](https://www.commonwl.org/) -- on the front-end with React and selected [D3](https://d3js.org) functions (see portfolio).
