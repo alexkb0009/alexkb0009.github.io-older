@@ -20,7 +20,7 @@
     .prose ul,
     .prose p,
     .prose ol {
-        font-size: 11pt;
+        font-size: 10pt;
     }
 
     article > .prose.py-3.mb-4 {
@@ -48,6 +48,11 @@
     h4 {
         font-size: 13pt;
         font-size: 12.5pt;
+    }
+
+    h5 {
+        font-size: 11pt;
+        font-size: 10.5pt;
     }
 
     .mb-1{

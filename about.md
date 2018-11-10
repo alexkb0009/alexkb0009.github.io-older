@@ -4,12 +4,13 @@ title: About
 permalink: /about/
 ---
 
-<h2 class="print-only mb-4 text-400">
+<h2 class="print-only mb-4 mt-0 text-400">
     Alexander Balashov
-    <br/>
-    <small class="text-300">
-        <a href="https://alexkb0009.github.io/">https://alexkb0009.github.io</a>
-    </small>
+    <div style="margin-top: -3pt;">
+        <small class="text-300">
+            <a href="https://alexkb0009.github.io/">https://alexkb0009.github.io</a>
+        </small>
+    </div>
 </h2>
 
 
@@ -137,6 +138,6 @@ permalink: /about/
 {:.mb-1.mt-3.text-500}
 - 800/600/650 Math/Reading/Writing SAT Scores (2008)
 
-<div class="mt-4">
-<small>Last updated on Wednesday, September 5th, 2018. Ask for code samples and/or references.</small>
+<div class="mt-3">
+<small>Last updated on Saturday, November 10th, 2018. Ask for code samples and/or references.</small>
 </div>
