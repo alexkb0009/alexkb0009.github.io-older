@@ -39,7 +39,7 @@ permalink: /about/
 - Developed a web front-end in [React.js](https://facebook.github.io/react/) as first step and prototype for mobile application design (see portfolio).
 - Iterated on mobile app design with feedback from shareholders.
 - Developed basic API using Python3 and [MongoDB](http://mongodb.org/) NoSQL DB.
-- Utilized WebSockets with pub-sub for real-time agent-buyer chatting, using a Python3 tornado server.
+- Utilized WebSockets with pub-sub for real-time agent-buyer chatting, using a Python3 Tornado server.
 
 
 #### [Integrated Computer Solutions, Inc.](https://ics.com)
