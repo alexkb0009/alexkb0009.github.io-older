@@ -3,6 +3,7 @@ layout: default
 ---
 
 {% assign related_files = site.static_files | where_exp:"f","f.path contains page.permalink" %}
+{% if related_files[0] %}
 <script
   src="https://code.jquery.com/jquery-3.2.1.min.js"
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
@@ -23,6 +24,7 @@ layout: default
     {% endfor %}
   </div>
 </div>
+{% endif %}
 
 <article class="container px-2 mx-auto mb4" itemscope itemtype="http://schema.org/BlogPosting">
   <h1 class="h1 text-300 col-12 sm-width-full py-2 mt-2 inline-block" itemprop="name headline">{{ page.title }}</h1>

@@ -3,7 +3,7 @@ title: IntelAgent - Real Estate Platform
 layout: post
 permalink: intelagent-real-estate-platform
 years: 2016
-tags: ["Python", "JavaScript", "MongoDB", "Redis", "Websockets", "OpenShift", "RESTful", "API", "React.js", "React Native", "iOS", "CSS3"]
+tags: ["JavaScript", "React.js", "Python", "MongoDB", "Redis", "Websockets", "OpenShift", "API",  "React Native", "iOS", "CSS3"]
 description: Something Something something
 ---
 

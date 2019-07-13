@@ -13,15 +13,17 @@
 {% endfor %}
 <div class="py-2 mb-3 prose clearfix portfolio-block">
 
+  {% unless thumbfile == '' %}
   <div class="col-3 right sm-width-full mb-2 mb-lg-0">
     <div class="imageholder">
       <a href="{{ item.url | prepend: site.baseurl }}" images="[{% for img in related_files %}{ "src" : "{{ img.path }}" },{% endfor %}]">
-        {% image portfolio_thumbnail {{ related_files[0].path }} style="opacity: 1;" %}
+        {% image portfolio_thumbnail {{ thumbfile.path }} style="opacity: 1;" %}
       </a>
     </div>
   </div>
+  {% endunless %}
 
-  <div class="col-9 left sm-width-full">
+  <div class="left sm-width-full col-{% if thumbfile != '' %}9{% else %}12{% endif %}">
 
     <h2 class="h2 lh-condensed col-10 mt-0 mb-2">
       <a class="link-primary" href="{{ item.url | prepend: site.baseurl }}">{{ item.title }}</a>

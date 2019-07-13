@@ -438,3 +438,205 @@ $arrow-button-width : 100px;
     }
   }
 }
+
+// Homepage title animation
+
+/*
+@keyframes rotateIt {
+  // 1
+  0% {
+    transform: rotate3D(1,0,0, 0deg);
+    content: "Current Work";
+  }
+
+  20% {
+    transform: rotate3D(1,0,0, 0deg);
+    content: "Current Work";
+  }
+
+  25% {
+    transform: rotate3D(1,0,0, -90deg);
+    content: "Current Work";
+  }
+
+  // 2
+  25.001% {
+    transform: rotate3D(1,0,0, -270deg);
+    content: "Past Work";
+  }
+
+  32.5% {
+    transform: rotate3D(1,0,0, -360deg);
+    content: "Past Work";
+  }
+
+  52.5% {
+    transform: rotate3D(1,0,0, -360deg);
+    content: "Past Work";
+  }
+
+  57.5% {
+    transform: rotate3D(1,0,0, -450deg);
+    content: "Past Work";
+  }
+
+  // 3
+  57.501% {
+    transform: rotate3D(1,0,0, -630deg);
+    content: "Things";
+  }
+
+  65% {
+    transform: rotate3D(1,0,0, -720deg);
+    content: "Things";
+  }
+
+  85% {
+    transform: rotate3D(1,0,0, -720deg);
+    content: "Things";
+  }
+
+  90% {
+    transform: rotate3D(1,0,0, -810deg);
+    content: "Things";
+  }
+
+  // 1
+  90.0001% {
+    transform: rotate3D(1,0,0, 90deg);
+    content: "Current Work";
+  }
+
+  97.5% {
+    transform: rotate3D(1,0,0, 0deg);
+    content: "Current Work";
+  }
+
+  100% {
+    transform: rotate3D(1,0,0, 0deg);
+    content: "Current Work";
+  }
+
+}
+*/
+
+$frame-1-text : "Current Work";
+$frame-1-width : 236px;
+$frame-2-text : "Past Work";
+$frame-2-width : 183px;
+$frame-3-text : "Things";
+$frame-3-width : 122px;
+
+@keyframes rotateIt {
+  // 1
+  0% {
+    transform: rotate3D(1,0,0, 0deg);
+    content: $frame-1-text;
+    width: $frame-1-width;
+  }
+
+  25% {
+    transform: rotate3D(1,0,0, 0deg);
+    content: $frame-1-text;
+    width: $frame-1-width;
+  }
+
+  27.5% {
+    transform: rotate3D(1,0,0, -90deg);
+    content: $frame-1-text;
+    width: $frame-1-width;
+  }
+
+  // 2
+  27.501% {
+    transform: rotate3D(1,0,0, -270deg);
+    content: $frame-2-text;
+    width: $frame-1-width;
+  }
+
+  32.5% {
+    transform: rotate3D(1,0,0, -360deg);
+    content: $frame-2-text;
+    width: $frame-2-width;
+  }
+
+  57.5% {
+    transform: rotate3D(1,0,0, -360deg);
+    content: $frame-2-text;
+    width: $frame-2-width;
+  }
+
+  60% {
+    transform: rotate3D(1,0,0, -450deg);
+    content: $frame-2-text;
+    width: $frame-2-width;
+  }
+
+  // 3
+  60.001% {
+    transform: rotate3D(1,0,0, -630deg);
+    content: $frame-3-text;
+    width: $frame-2-width;
+  }
+
+  65% {
+    transform: rotate3D(1,0,0, -720deg);
+    content: $frame-3-text;
+    width: $frame-3-width;
+  }
+
+  90% {
+    transform: rotate3D(1,0,0, -720deg);
+    content: $frame-3-text;
+    width: $frame-3-width;
+  }
+
+  92.5% {
+    transform: rotate3D(1,0,0, -810deg);
+    content: $frame-3-text;
+    width: $frame-3-width;
+  }
+
+  // 1
+  92.501% {
+    transform: rotate3D(1,0,0, 90deg);
+    content: $frame-1-text;
+    width: $frame-3-width;
+  }
+
+  97.5% {
+    transform: rotate3D(1,0,0, 0deg);
+    content: $frame-1-text;
+    width: $frame-1-width;
+  }
+
+  100% {
+    transform: rotate3D(1,0,0, 0deg);
+    content: $frame-1-text;
+    width: $frame-1-width;
+  }
+
+}
+
+span#title-main {
+  display: inline-block;
+  transform-style: preserve-3d;
+  perspective: 30rem;
+  //width: 236px;
+  text-align: right;
+  white-space: nowrap;
+}
+
+span#title-main:after {
+  display: inline-block;
+  content: "Current Work";
+  //animation: rotateIt 6s infinite cubic-bezier(0.5, 0.57, 0.53, 0.22);
+  animation: rotateIt 7.5s infinite linear;
+  animation-fill-mode: forwards;
+}
+
+span#title-main:hover:after {
+  animation-play-state: paused;
+  text-shadow: 0 0 0;
+}
+

@@ -3,7 +3,7 @@ title: Issues - eParticipation Platform
 layout: post
 permalink: issues-eparticipation-platform
 years: 2014-2015
-tags: ["Python", "JavaScript", "Backbone.js", "Jinja2", "Platform", "MongoDB", "Redis", "OpenShift", "RESTful", "API", "Incomplete", "CSS3"]
+tags: ["JavaScript", "Backbone.js", "Python", "MongoDB", "Redis", "OpenShift", "RESTful", "API", "Platform", "Jinja2", "CSS3", "Incomplete" ]
 description: Something Something something
 link: https://github.com/alexkb0009/issues-platform
 link_title: GitHub Repo

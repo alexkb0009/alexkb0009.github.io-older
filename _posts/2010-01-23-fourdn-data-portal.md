@@ -1,9 +1,9 @@
 ---
-title: 4D Nucleome - Data Portal
+title: 4D Nucleome Data Portal
 layout: post
 permalink: 4dn-data-portal
-years: 2016-2018
-tags: ["JavaScript", "D3.js", "Data Visualization", "Python", "ElasticSearch", "Pyramid", "AWS", "API", "Platform"]
+years: 2016-Present
+tags: ["JavaScript", "React.js", "D3.js", "Python", "PostgreSQL", "ElasticSearch", "Pyramid", "AWS", "API", "Platform", "SCSS"]
 description: Something Something something
 link: https://data.4dnucleome.org
 link_title: Production Site
