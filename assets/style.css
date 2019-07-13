@@ -2780,6 +2780,11 @@ code {
   .tag-color-background-php:not(.active):hover {
     background-color: #585da0; }
 
+.tag-color-background-postgresql {
+  background-color: #336791; }
+  .tag-color-background-postgresql:not(.active):hover {
+    background-color: #264c6b; }
+
 .tag-color-background-pyramid {
   background-color: #ab2431; }
   .tag-color-background-pyramid:not(.active):hover {
@@ -2824,6 +2829,11 @@ code {
   background-color: #273300; }
   .tag-color-background-saas:not(.active):hover {
     background-color: black; }
+
+.tag-color-background-scss {
+  background-color: #cf649a; }
+  .tag-color-background-scss:not(.active):hover {
+    background-color: #c33d81; }
 
 .tag-color-background-silex {
   background-color: #4c2fbe; }
@@ -3055,6 +3065,11 @@ code {
   .tag-color-text-php.hover-darken:hover {
     background-color: #585da0; }
 
+.tag-color-text-postgresql {
+  color: #336791; }
+  .tag-color-text-postgresql.hover-darken:hover {
+    background-color: #264c6b; }
+
 .tag-color-text-pyramid {
   color: #ab2431; }
   .tag-color-text-pyramid.hover-darken:hover {
@@ -3099,6 +3114,11 @@ code {
   color: #273300; }
   .tag-color-text-saas.hover-darken:hover {
     background-color: black; }
+
+.tag-color-text-scss {
+  color: #cf649a; }
+  .tag-color-text-scss.hover-darken:hover {
+    background-color: #c33d81; }
 
 .tag-color-text-silex {
   color: #4c2fbe; }
@@ -3235,6 +3255,158 @@ code {
     .link-to-demo-container .link-to-demo:hover {
       background: #ff7200;
       text-decoration: none; }
+
+/*
+@keyframes rotateIt {
+  // 1
+  0% {
+    transform: rotate3D(1,0,0, 0deg);
+    content: "Current Work";
+  }
+
+  20% {
+    transform: rotate3D(1,0,0, 0deg);
+    content: "Current Work";
+  }
+
+  25% {
+    transform: rotate3D(1,0,0, -90deg);
+    content: "Current Work";
+  }
+
+  // 2
+  25.001% {
+    transform: rotate3D(1,0,0, -270deg);
+    content: "Past Work";
+  }
+
+  32.5% {
+    transform: rotate3D(1,0,0, -360deg);
+    content: "Past Work";
+  }
+
+  52.5% {
+    transform: rotate3D(1,0,0, -360deg);
+    content: "Past Work";
+  }
+
+  57.5% {
+    transform: rotate3D(1,0,0, -450deg);
+    content: "Past Work";
+  }
+
+  // 3
+  57.501% {
+    transform: rotate3D(1,0,0, -630deg);
+    content: "Things";
+  }
+
+  65% {
+    transform: rotate3D(1,0,0, -720deg);
+    content: "Things";
+  }
+
+  85% {
+    transform: rotate3D(1,0,0, -720deg);
+    content: "Things";
+  }
+
+  90% {
+    transform: rotate3D(1,0,0, -810deg);
+    content: "Things";
+  }
+
+  // 1
+  90.0001% {
+    transform: rotate3D(1,0,0, 90deg);
+    content: "Current Work";
+  }
+
+  97.5% {
+    transform: rotate3D(1,0,0, 0deg);
+    content: "Current Work";
+  }
+
+  100% {
+    transform: rotate3D(1,0,0, 0deg);
+    content: "Current Work";
+  }
+
+}
+*/
+@keyframes rotateIt {
+  0% {
+    transform: rotate3D(1, 0, 0, 0deg);
+    content: "Current Work";
+    width: 236px; }
+  25% {
+    transform: rotate3D(1, 0, 0, 0deg);
+    content: "Current Work";
+    width: 236px; }
+  27.5% {
+    transform: rotate3D(1, 0, 0, -90deg);
+    content: "Current Work";
+    width: 236px; }
+  27.501% {
+    transform: rotate3D(1, 0, 0, -270deg);
+    content: "Past Work";
+    width: 236px; }
+  32.5% {
+    transform: rotate3D(1, 0, 0, -360deg);
+    content: "Past Work";
+    width: 183px; }
+  57.5% {
+    transform: rotate3D(1, 0, 0, -360deg);
+    content: "Past Work";
+    width: 183px; }
+  60% {
+    transform: rotate3D(1, 0, 0, -450deg);
+    content: "Past Work";
+    width: 183px; }
+  60.001% {
+    transform: rotate3D(1, 0, 0, -630deg);
+    content: "Things";
+    width: 183px; }
+  65% {
+    transform: rotate3D(1, 0, 0, -720deg);
+    content: "Things";
+    width: 122px; }
+  90% {
+    transform: rotate3D(1, 0, 0, -720deg);
+    content: "Things";
+    width: 122px; }
+  92.5% {
+    transform: rotate3D(1, 0, 0, -810deg);
+    content: "Things";
+    width: 122px; }
+  92.501% {
+    transform: rotate3D(1, 0, 0, 90deg);
+    content: "Current Work";
+    width: 122px; }
+  97.5% {
+    transform: rotate3D(1, 0, 0, 0deg);
+    content: "Current Work";
+    width: 236px; }
+  100% {
+    transform: rotate3D(1, 0, 0, 0deg);
+    content: "Current Work";
+    width: 236px; } }
+span#title-main {
+  display: inline-block;
+  transform-style: preserve-3d;
+  perspective: 30rem;
+  text-align: right;
+  white-space: nowrap; }
+
+span#title-main:after {
+  display: inline-block;
+  content: "Current Work";
+  animation: rotateIt 7.5s infinite linear;
+  animation-fill-mode: forwards; }
+
+span#title-main:hover:after {
+  animation-play-state: paused;
+  text-shadow: 0 0 0; }
 
 /* Type utilities */
 .h0 {
