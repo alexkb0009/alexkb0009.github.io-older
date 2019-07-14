@@ -618,6 +618,122 @@ $frame-3-width : 122px;
 
 }
 
+$bg-ext-transform: translate3d(0, 0px, -10px);
+
+@keyframes rotateItBG {
+  // 1
+  0% {
+    transform: rotate3D(1,0,0, 0deg) + $bg-ext-transform;
+    content: $frame-1-text;
+    width: $frame-1-width;
+    filter: blur(0px);
+  }
+
+  25% {
+    transform: rotate3D(1,0,0, 0deg) + $bg-ext-transform;
+    content: $frame-1-text;
+    width: $frame-1-width;
+    filter: blur(0px);
+  }
+
+  27.5% {
+    transform: rotate3D(1,0,0, -90deg) translate3d(0, 100px, -50px);// + $bg-ext-transform;
+    content: $frame-1-text;
+    width: $frame-1-width;
+    filter: blur(2px);
+  }
+
+  // 2
+  27.5001% {
+    transform: rotate3D(1,0,0, -270deg) translate3d(0, -0px, -30px);// + $bg-ext-transform;
+    content: $frame-2-text;
+    width: $frame-1-width;
+    filter: blur(2px);
+  }
+
+  32.5% {
+    transform: rotate3D(1,0,0, -360deg) + $bg-ext-transform;
+    content: $frame-2-text;
+    width: $frame-2-width;
+    filter: blur(0px);
+  }
+
+  57.5% {
+    transform: rotate3D(1,0,0, -360deg) + $bg-ext-transform;
+    content: $frame-2-text;
+    width: $frame-2-width;
+    filter: blur(0px);
+  }
+
+  60% {
+    transform: rotate3D(1,0,0, -450deg) translate3d(0, 100px, -50px);// + $bg-ext-transform;
+    content: $frame-2-text;
+    width: $frame-2-width;
+    filter: blur(2px);
+  }
+
+  // 3
+  60.0001% {
+    transform: rotate3D(1,0,0, -630deg) translate3d(0, -0px, -30px);// + $bg-ext-transform;
+    content: $frame-3-text;
+    width: $frame-2-width;
+    filter: blur(2px);
+  }
+
+  65% {
+    transform: rotate3D(1,0,0, -720deg) + $bg-ext-transform;
+    content: $frame-3-text;
+    width: $frame-3-width;
+    filter: blur(0px);
+  }
+
+  90% {
+    transform: rotate3D(1,0,0, -720deg) + $bg-ext-transform;
+    content: $frame-3-text;
+    width: $frame-3-width;
+    filter: blur(0px);
+  }
+
+  92.5% {
+    transform: rotate3D(1,0,0, -810deg) translate3d(0, 100px, -50px);// + $bg-ext-transform;
+    content: $frame-3-text;
+    width: $frame-3-width;
+    filter: blur(2px);
+  }
+
+  // 1
+  92.5001% {
+    transform: rotate3D(1,0,0, 90deg) translate3d(0, -0px, -30px);// + $bg-ext-transform;
+    content: $frame-1-text;
+    width: $frame-3-width;
+    filter: blur(2px);
+  }
+
+  97.5% {
+    transform: rotate3D(1,0,0, 0deg) + $bg-ext-transform;
+    content: $frame-1-text;
+    width: $frame-1-width;
+    filter: blur(0px);
+  }
+
+  100% {
+    transform: rotate3D(1,0,0, 0deg) + $bg-ext-transform;
+    content: $frame-1-text;
+    width: $frame-1-width;
+    filter: blur(0px);
+  }
+
+}
+
+h1.header-title {
+  transform: translate3d(0,0,0);
+  transform-origin: 0 75%;
+  transition: transform .1s;
+  &:hover {
+    transform: translate3d(0,0,0) scale3d(1.1, 1.1, 1);
+  }
+}
+
 span#title-main {
   display: inline-block;
   transform-style: preserve-3d;
@@ -635,8 +751,18 @@ span#title-main:after {
   animation-fill-mode: forwards;
 }
 
+span#title-main:before {
+  position: absolute;
+  right: 0px;
+  display: inline-block;
+  content: "Current Work";
+  animation: rotateItBG 7.5s infinite linear;
+  animation-fill-mode: forwards;
+  color: rgba(0,0,0,0.2);
+  //color: rgba(255,255,255,0.2);
+}
+
 span#title-main:hover:after {
-  animation-play-state: paused;
-  text-shadow: 0 0 0;
+  //animation-play-state: paused;
 }
 
