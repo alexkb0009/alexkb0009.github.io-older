@@ -3489,7 +3489,7 @@ span#title-main:before {
   content: "Current Work";
   animation: rotateItBG 7.5s infinite linear;
   animation-fill-mode: forwards;
-  color: rgba(0, 0, 0, 0.2); }
+  color: rgba(0, 0, 0, 0.125); }
 
 /* Type utilities */
 .h0 {
