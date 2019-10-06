@@ -26,6 +26,14 @@ code {
       width: (11 / 12 * 100%); // matches col-10
     }
 
+    a {
+      color: $color-nav-link;
+      &:hover {
+        color: $color-primary-link;
+        text-decoration: none;
+      }
+    }
+
   }
 
   p {
@@ -585,6 +593,10 @@ $frame-3-width : 122px;
     width: $frame-3-width;
   }
 
+  87.5% {
+    width: $frame-3-width;
+  }
+
   90% {
     transform: rotate3D(1,0,0, -720deg);
     content: $frame-3-text;
@@ -594,14 +606,14 @@ $frame-3-width : 122px;
   92.5% {
     transform: rotate3D(1,0,0, -810deg);
     content: $frame-3-text;
-    width: $frame-3-width;
+    width: $frame-1-width;
   }
 
   // 1
   92.501% {
     transform: rotate3D(1,0,0, 90deg);
     content: $frame-1-text;
-    width: $frame-3-width;
+    width: $frame-1-width;
   }
 
   97.5% {
@@ -697,7 +709,7 @@ $bg-ext-transform: translate3d(0, 0px, -10px);
   92.5% {
     transform: rotate3D(1,0,0, -810deg) translate3d(0, 100px, -50px);// + $bg-ext-transform;
     content: $frame-3-text;
-    width: $frame-3-width;
+    width: $frame-1-width;
     filter: blur(2px);
   }
 
@@ -705,7 +717,7 @@ $bg-ext-transform: translate3d(0, 0px, -10px);
   92.5001% {
     transform: rotate3D(1,0,0, 90deg) translate3d(0, -0px, -30px);// + $bg-ext-transform;
     content: $frame-1-text;
-    width: $frame-3-width;
+    width: $frame-1-width;
     filter: blur(2px);
   }
 
@@ -729,9 +741,11 @@ h1.header-title {
   transform: translate3d(0,0,0);
   transform-origin: 0 75%;
   transition: transform .1s;
+  /*
   &:hover {
     transform: translate3d(0,0,0) scale3d(1.1, 1.1, 1);
   }
+  */
 }
 
 span#title-main {
@@ -758,7 +772,7 @@ span#title-main:before {
   content: "Current Work";
   animation: rotateItBG 7.5s infinite linear;
   animation-fill-mode: forwards;
-  color: rgba(0,0,0,0.2);
+  color: rgba(0,0,0,0.125);
   //color: rgba(255,255,255,0.2);
 }
 

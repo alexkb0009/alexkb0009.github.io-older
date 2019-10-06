@@ -4,6 +4,14 @@ layout: default
 
 {% assign related_files = site.static_files | where_exp:"f","f.path contains page.permalink" %}
 {% if related_files[0] %}
+
+<!--
+  Yup, this site uses plain old JQuery + a slider library, no cool things like React or D3 here.
+  The goal is simplicity - enough React building is done already on production projects -
+  so opted to go with minimal JS and rely more on static elements and CSS.
+  Being a GitHub pages site, there is no backend either. Just static pages generated with Jekyll :).
+-->
+
 <script
   src="https://code.jquery.com/jquery-3.2.1.min.js"
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
@@ -48,8 +56,10 @@ layout: default
   {% include previous-next.html %}
 </div>
 
-<script>
 
+{% if related_files[0] %}
+<script>
+/** Portfolio Slider Initialization */
 window.portfolio = window.portfolio || {};
 window.portfolio.slider = {
   'initialized' : false,
@@ -89,6 +99,6 @@ function initializeSlider(){
 }
 
 $(window).on('load', initializeSlider);
-//$(document).ready(initializeSlider);
 
 </script>
+{% endif %}

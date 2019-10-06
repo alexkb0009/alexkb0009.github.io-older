@@ -25,10 +25,17 @@ $color-primary-link: $orange !default;
 
 // Import sass partials (used in all themes)
 @import
-        "font-awesome/font-awesome",
         "variables",
         "base",
         "components",
         "utilities",
         "print"
 ;
+
+/** Homepage **/
+
+.social-icons-header {
+  > .inline-block {
+    vertical-align: middle;
+  }
+}
