@@ -7,11 +7,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Clinical Genomic Analysis Platform</title>
-  <meta name="description" content="In development; leading front-end team. A platform for clinicians to submit patient cases for DNA sequencing. Will be able to run analytic pipelines on seque...">
+  <meta name="description" content="A platform for clinicians to gather information on and submit patient cases for DNA sequencing, analysis, reporting, &amp; more. Will be able to run analytic...">
   
   
   <link rel="shortcut icon" href="/assets/logo_initials_tiny_yellow.png">
   <link rel="stylesheet" href="/assets/style.css">
+  <script src="https://kit.fontawesome.com/0c83b3e4de.js" crossorigin="anonymous"></script>
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,400italic,300italic,300,100,500,700' rel='stylesheet' type='text/css'>
 
   <link rel="canonical" href="/cgap-portal">
@@ -52,6 +53,59 @@
       
 
 
+<!--
+  Yup, this site uses plain old JQuery + a slider library, no cool things like React or D3 here.
+  The goal is simplicity - enough React building is done already on production projects -
+  so opted to go with minimal JS and rely more on static elements and CSS.
+  Being a GitHub pages site, there is no backend either. Just static pages generated with Jekyll :).
+-->
+
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+
+<div class="images-slideshow-container">
+  <div class="images slideshow" style="opacity: 0;">
+    
+      
+        
+        <div class="image-container">
+          <img src="/assets/images/cgap-portal/05_pedigree-viz-ex-v2.png" />
+        </div>
+        
+      
+    
+      
+        
+        <div class="image-container">
+          <img src="/assets/images/cgap-portal/06_pedigree-viz-ex-v2-1.png" />
+        </div>
+        
+      
+    
+      
+        
+        <div class="image-container">
+          <img src="/assets/images/cgap-portal/08_pedigree-viz-dummy-data.png" />
+        </div>
+        
+      
+    
+      
+        
+        <div class="image-container">
+          <img src="/assets/images/cgap-portal/15_provenance-graph.png" />
+        </div>
+        
+      
+    
+  </div>
+</div>
+
+
 <article class="container px-2 mx-auto mb4" itemscope itemtype="http://schema.org/BlogPosting">
   <h1 class="h1 text-300 col-12 sm-width-full py-2 mt-2 inline-block" itemprop="name headline">Clinical Genomic Analysis Platform</h1>
   <div class="col-4 sm-width-full mt-1 border-top-thin ">
@@ -59,11 +113,15 @@
   </div>
 
   <div class="prose" itemprop="articleBody">
-      <p>In development; leading front-end team. A platform for clinicians to submit patient cases for DNA sequencing. Will be able to run analytic pipelines on sequenced DNA data in order to attempt to identify genetic and yet-undiagnosed diseases.</p>
+      <p>A platform for clinicians to gather information on and submit patient cases for DNA sequencing, analysis, reporting, &amp; more. Will be able to run analytic pipelines on sequenced DNA data in order to attempt to identify genetic and yet-undiagnosed diseases.</p>
 
-<p>Source code is initially based on that of the 4DN Nucleome Data Portal; common reusable components have been split out and will be re-used while the overrall look &amp; feel will diverge.</p>
+<p>Alpha version in development (leading front-end). The final ‘brand’ name (and domain) is still to be decided.</p>
 
-<h4 id="no-images-currently-available">No images currently available</h4>
+<p>Overall codebase is based on that of the 4DN Nucleome Data Portal. Back-end infrastructure is the same, however is being extended to be able to store &amp; reference variant annotations (terabytes+) from patient sample variants.</p>
+
+<p>For frontend, common reusable components have been split out from 4DN portal into either a repo containing shared portal components or own repo(s) (depending on reusability &amp; potential usefulness to other developers) and are being re-used in this new platform while the overrall look &amp; feel has greately diverged.</p>
+
+<p>One interesting visualization feature we’re building is the Pedigree visualization tool for clinicians to be able to view a  family tree containing genetic features and history. This tool is built by having React components render out SVG and HTML elements, utilizing some D3 functions used to help generate line dimensions, and a healthy amount of algorithms to figure out the most optimal ordering and positioning of nodes as well as visually optimal routing of edges/paths.</p>
 
   </div>
 
@@ -80,7 +138,7 @@
     <a class="no-underline border-top-thin py-1 block" href="/4dn-data-portal">
       <span class="h5 bold text-accent">Previous</span>
       <p class="bold h3 link-primary mb-1">4D Nucleome Data Portal</p>
-      <p>Leading front-end development of the 4D Nucleome (4DN) project’s data coordination portal. Utilizing React.js to build out a single-page application...</p>
+      <p>Data coordination portal for the 4D Nucleome (4DN) project built in Harvard Medical School’s Department of Biomedical Informatics (HMS DBMI)....</p>
     </a>
   </div>
   
@@ -88,8 +146,10 @@
 
 </div>
 
-<script>
 
+
+<script>
+/** Portfolio Slider Initialization */
 window.portfolio = window.portfolio || {};
 window.portfolio.slider = {
   'initialized' : false,
@@ -129,9 +189,9 @@ function initializeSlider(){
 }
 
 $(window).on('load', initializeSlider);
-//$(document).ready(initializeSlider);
 
 </script>
+
 
     </div>
 
@@ -144,7 +204,7 @@ $(window).on('load', initializeSlider);
       <small><a href="/privacy/">Privacy Policy</a></small>
     </p>
     <p class="col-8 sm-width-full left py-2 mb-0 print-only">
-      <small>Printed from <a href="https://alexkb0009.github.io//cgap-portal">https://alexkb0009.github.io//cgap-portal</a></small>
+      <small>Printed from <a href="http://localhost:4000/cgap-portal">http://localhost:4000/cgap-portal</a></small>
     </p>
     <!--
     <ul class="list-reset right clearfix sm-width-full py-2 mb-2 mb-lg-0">

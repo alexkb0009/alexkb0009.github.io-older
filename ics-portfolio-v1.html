@@ -12,6 +12,7 @@
   
   <link rel="shortcut icon" href="/assets/logo_initials_tiny_yellow.png">
   <link rel="stylesheet" href="/assets/style.css">
+  <script src="https://kit.fontawesome.com/0c83b3e4de.js" crossorigin="anonymous"></script>
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,400italic,300italic,300,100,500,700' rel='stylesheet' type='text/css'>
 
   <link rel="canonical" href="/ics-portfolio-v1">
@@ -50,6 +51,14 @@
 
     <div>
       
+
+
+<!--
+  Yup, this site uses plain old JQuery + a slider library, no cool things like React or D3 here.
+  The goal is simplicity - enough React building is done already on production projects -
+  so opted to go with minimal JS and rely more on static elements and CSS.
+  Being a GitHub pages site, there is no backend either. Just static pages generated with Jekyll :).
+-->
 
 <script
   src="https://code.jquery.com/jquery-3.2.1.min.js"
@@ -137,8 +146,10 @@
 
 </div>
 
-<script>
 
+
+<script>
+/** Portfolio Slider Initialization */
 window.portfolio = window.portfolio || {};
 window.portfolio.slider = {
   'initialized' : false,
@@ -178,9 +189,9 @@ function initializeSlider(){
 }
 
 $(window).on('load', initializeSlider);
-//$(document).ready(initializeSlider);
 
 </script>
+
 
     </div>
 
@@ -193,7 +204,7 @@ $(window).on('load', initializeSlider);
       <small><a href="/privacy/">Privacy Policy</a></small>
     </p>
     <p class="col-8 sm-width-full left py-2 mb-0 print-only">
-      <small>Printed from <a href="https://alexkb0009.github.io//ics-portfolio-v1">https://alexkb0009.github.io//ics-portfolio-v1</a></small>
+      <small>Printed from <a href="http://localhost:4000/ics-portfolio-v1">http://localhost:4000/ics-portfolio-v1</a></small>
     </p>
     <!--
     <ul class="list-reset right clearfix sm-width-full py-2 mb-2 mb-lg-0">

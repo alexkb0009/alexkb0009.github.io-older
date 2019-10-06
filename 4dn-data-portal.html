@@ -7,11 +7,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>4D Nucleome Data Portal</title>
-  <meta name="description" content="Leading front-end development of the 4D Nucleome (4DN) project’s data coordination portal.">
+  <meta name="description" content="Data coordination portal for the 4D Nucleome (4DN) project built in Harvard Medical School’s Department of Biomedical Informatics (HMS DBMI). Leading front-e...">
   
   
   <link rel="shortcut icon" href="/assets/logo_initials_tiny_yellow.png">
   <link rel="stylesheet" href="/assets/style.css">
+  <script src="https://kit.fontawesome.com/0c83b3e4de.js" crossorigin="anonymous"></script>
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,400italic,300italic,300,100,500,700' rel='stylesheet' type='text/css'>
 
   <link rel="canonical" href="/4dn-data-portal">
@@ -50,6 +51,14 @@
 
     <div>
       
+
+
+<!--
+  Yup, this site uses plain old JQuery + a slider library, no cool things like React or D3 here.
+  The goal is simplicity - enough React building is done already on production projects -
+  so opted to go with minimal JS and rely more on static elements and CSS.
+  Being a GitHub pages site, there is no backend either. Just static pages generated with Jekyll :).
+-->
 
 <script
   src="https://code.jquery.com/jquery-3.2.1.min.js"
@@ -127,6 +136,22 @@
     
       
         
+        <div class="image-container">
+          <img src="/assets/images/4dn-data-portal/85_expset-item-view.jpg" />
+        </div>
+        
+      
+    
+      
+        
+        <div class="image-container">
+          <img src="/assets/images/4dn-data-portal/89_higlass-display-view.jpg" />
+        </div>
+        
+      
+    
+      
+        
       
     
   </div>
@@ -140,13 +165,15 @@
   </div>
 
   <div class="prose" itemprop="articleBody">
-      <p>Leading front-end development of the 4D Nucleome (4DN) project’s data coordination portal.</p>
+      <p>Data coordination portal for the 4D Nucleome (4DN) project built in Harvard Medical School’s Department of Biomedical Informatics (HMS DBMI). Leading front-end development.</p>
 
-<p>Utilizing React.js to build out a single-page application (SPA) website which enables researchers to upload, share, browse, and download large data-files relating to the research of 4DN.</p>
+<p>A single-page application (SPA) built on React.js which enables researchers to upload, share, browse, and download large data-files relating to the research of 4DN.</p>
 
 <p>Back-end is built in Python 3 as a RESTful API using the Pyramid web framework, with server-side rendering of the API response performed with React.js.</p>
 
-<p>Notable and unique visualization features include Workflow and File Provenance graphing component(s) which can graph any CWL-based Workflow representation, which will at some point be published as a standalone React component or library through NPM/GH.</p>
+<p>This portal integrates the work of other teams both at Harvard Medical School’s Department of Biomedical Informatics (HMS DBMI) and other organizations, such as UMass Medical School (UMMS), which have built out visualization tools such as <a href="https://higlass.io">HiGlass</a> and a microscope configuration GUI. We have helped partner teams build out and package such projects as reusable/distributable React components w. Babel, Webpack, and NPM which we can then import and use in the 4DN portal (with code-splitting).</p>
+
+<p>Among notable visualization features which have been specifically built inside the 4DN portal includes the <a href="/react-workflow-viz">Workflow and File Provenance graphing component(s)</a> which can graph any CWL-based Workflow representation. This Worklow visualization library is <a href="https://github.com/4dn-dcic/react-workflow-viz">being put into its own repository</a> and at some point will be available on NPM.</p>
 
   </div>
 
@@ -164,10 +191,10 @@
 
 
   <div class="col-4 sm-width-full left mr-lg-4 mt-3">
-    <a class="no-underline border-top-thin py-1 block" href="/intelagent-real-estate-platform">
+    <a class="no-underline border-top-thin py-1 block" href="/react-workflow-viz">
       <span class="h5 bold text-accent">Previous</span>
-      <p class="bold h3 link-primary mb-1">IntelAgent - Real Estate Platform</p>
-      <p>An in-progress project for connecting those looking to buy beautiful homes to real estate agents. Horizontally scalable with OpenShift PaaS,...</p>
+      <p class="bold h3 link-primary mb-1">`react-workflow-viz` Library</p>
+      <p>react-workflow-viz (suggestions for better name are welcome) is a distributable module library containing a React components and parsing functions that...</p>
     </a>
   </div>
   
@@ -176,15 +203,17 @@
     <a class="no-underline border-top-thin py-1 block" href="/cgap-portal">
       <span class="h5 bold text-accent">Next</span>
       <p class="bold h3 link-primary mb-1">Clinical Genomic Analysis Platform</p>
-      <p>In development; leading front-end team. A platform for clinicians to submit patient cases for DNA sequencing. Will be able to...</p>
+      <p>A platform for clinicians to gather information on and submit patient cases for DNA sequencing, analysis, reporting, & more. Will...</p>
     </a>
   </div>
 
 
 </div>
 
-<script>
 
+
+<script>
+/** Portfolio Slider Initialization */
 window.portfolio = window.portfolio || {};
 window.portfolio.slider = {
   'initialized' : false,
@@ -224,9 +253,9 @@ function initializeSlider(){
 }
 
 $(window).on('load', initializeSlider);
-//$(document).ready(initializeSlider);
 
 </script>
+
 
     </div>
 
@@ -239,7 +268,7 @@ $(window).on('load', initializeSlider);
       <small><a href="/privacy/">Privacy Policy</a></small>
     </p>
     <p class="col-8 sm-width-full left py-2 mb-0 print-only">
-      <small>Printed from <a href="https://alexkb0009.github.io//4dn-data-portal">https://alexkb0009.github.io//4dn-data-portal</a></small>
+      <small>Printed from <a href="http://localhost:4000/4dn-data-portal">http://localhost:4000/4dn-data-portal</a></small>
     </p>
     <!--
     <ul class="list-reset right clearfix sm-width-full py-2 mb-2 mb-lg-0">

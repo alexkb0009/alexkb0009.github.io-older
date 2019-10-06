@@ -12,6 +12,7 @@
   
   <link rel="shortcut icon" href="/assets/logo_initials_tiny_yellow.png">
   <link rel="stylesheet" href="/assets/style.css">
+  <script src="https://kit.fontawesome.com/0c83b3e4de.js" crossorigin="anonymous"></script>
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,400italic,300italic,300,100,500,700' rel='stylesheet' type='text/css'>
 
   <link rel="canonical" href="/intelagent-real-estate-platform">
@@ -50,6 +51,14 @@
 
     <div>
       
+
+
+<!--
+  Yup, this site uses plain old JQuery + a slider library, no cool things like React or D3 here.
+  The goal is simplicity - enough React building is done already on production projects -
+  so opted to go with minimal JS and rely more on static elements and CSS.
+  Being a GitHub pages site, there is no backend either. Just static pages generated with Jekyll :).
+-->
 
 <script
   src="https://code.jquery.com/jquery-3.2.1.min.js"
@@ -123,18 +132,20 @@
   
   
   <div class="col-4 sm-width-full left mt-3">
-    <a class="no-underline border-top-thin py-1 block" href="/4dn-data-portal">
+    <a class="no-underline border-top-thin py-1 block" href="/react-workflow-viz">
       <span class="h5 bold text-accent">Next</span>
-      <p class="bold h3 link-primary mb-1">4D Nucleome Data Portal</p>
-      <p>Leading front-end development of the 4D Nucleome (4DN) project's data coordination portal. Utilizing React.js to build out a single-page application...</p>
+      <p class="bold h3 link-primary mb-1">`react-workflow-viz` Library</p>
+      <p>`react-workflow-viz` (suggestions for better name are welcome) is a distributable module library containing a React components and parsing functions that...</p>
     </a>
   </div>
 
 
 </div>
 
-<script>
 
+
+<script>
+/** Portfolio Slider Initialization */
 window.portfolio = window.portfolio || {};
 window.portfolio.slider = {
   'initialized' : false,
@@ -174,9 +185,9 @@ function initializeSlider(){
 }
 
 $(window).on('load', initializeSlider);
-//$(document).ready(initializeSlider);
 
 </script>
+
 
     </div>
 
@@ -189,7 +200,7 @@ $(window).on('load', initializeSlider);
       <small><a href="/privacy/">Privacy Policy</a></small>
     </p>
     <p class="col-8 sm-width-full left py-2 mb-0 print-only">
-      <small>Printed from <a href="https://alexkb0009.github.io//intelagent-real-estate-platform">https://alexkb0009.github.io//intelagent-real-estate-platform</a></small>
+      <small>Printed from <a href="http://localhost:4000/intelagent-real-estate-platform">http://localhost:4000/intelagent-real-estate-platform</a></small>
     </p>
     <!--
     <ul class="list-reset right clearfix sm-width-full py-2 mb-2 mb-lg-0">
