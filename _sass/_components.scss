@@ -42,6 +42,7 @@ code {
 
   ul, ol {
     padding-left: 40px;
+    margin-bottom: 16px;
   }
 
   li {
@@ -189,11 +190,35 @@ code {
 
 }
 
-// Portfolio Blocks
-
 .text-accent {
   transition: color .5s;
 }
+
+
+/****************************
+        About Page
+****************************/
+
+
+
+
+
+@media print {
+
+  .name-container {
+    margin-bottom: 1rem !important;
+  }
+
+  h2.about-section-title {
+    margin-top: 1.25rem !important;
+    margin-bottom: 1rem !important;
+  }
+}
+
+/****************************
+      Portfolio Blocks
+****************************/
+
 
 .portfolio-block {
 
@@ -247,7 +272,9 @@ code {
   border: 1px solid #ddd;
 }
 
-// Tags
+/****************************
+      Tags
+****************************/
 
 // Tag Style
 
@@ -317,7 +344,9 @@ code {
   }
 }
 
-// Portfolio Pages
+/****************************
+      Portfolio Pages
+****************************/
 
 @mixin gradient-shadow-ltr {
   background: -moz-linear-gradient(left, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
@@ -447,7 +476,10 @@ $arrow-button-width : 100px;
   }
 }
 
-// Homepage title animation
+
+/****************************
+  Homepage title animation
+****************************/
 
 /*
 @keyframes rotateIt {

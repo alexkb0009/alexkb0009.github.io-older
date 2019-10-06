@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-<h2 class="print-only mb-4 mt-0 text-400">
+<h2 class="print-only mb-4 mt-0 text-400 name-container">
     Alexander Balashov
     <div style="margin-top: -3pt;">
         <small class="text-300">
@@ -15,25 +15,37 @@ permalink: /about/
 
 
 ## Professional Work
-{:.text-300.mt-3.mb-4}
+{:.text-300.mt-3.mb-4.about-section-title}
 
 #### [Harvard Medical School / Bioinformatics](https://dbmi.hms.harvard.edu)
 {:.mb-0.mt-3.text-500}
-##### 2016 - Present
-{:.mt-0.mb-1.text-400}
-- Lead front-end developer for the [4D Data Nucleome Portal](https://data.4dnucleome.org), which runs a single-page application (see portfolio).
+<h6 class="text-400 mt-0 mb-1">
+2019 - Present&nbsp;&ndash;&nbsp;<span class="text-500">Sr. Front-End/Full-Stack Developer</span>
+</h6>
+- Leading front-end development on two projects with 4+ front-end developers, within multidisciplinary team of 20+.
+  - Clinical Genomics Analysis Platform ('CGAP') (see portfolio)
+  - 4D Nucleome Data Portal ([data.4dnucleome.org](https://data.4dnucleome.org)) (see portfolio)
+- Implemented Pedigree (Family Tree) visualization tool, including algorithms for finding optimal node order & positions and visually appealing edge routing. Built as React components within functional paradigm, using memoization for performance optimization, and ultimately rendered to SVG & HTML DOM elements.
+- Training, on-boarding, and hiring front-end developers.
+- Drafting UI-related architectures, plans, and tasks in response to business requirements.
+- Aiding other teams in building and packaging visualization components, integrating components into CGAP & 4DN platforms/portals.
+
+<h6 class="text-400 mt-0 mb-1">
+2016 - 2018&nbsp;&ndash;&nbsp;<span class="text-500">Front-End Developer</span>
+</h6>
+- Leading front-end development on the [4D Data Nucleome Portal](https://data.4dnucleome.org), which runs a single-page application.
 - Created and iterated on variety of views and overall front-end design in [React.js](https://facebook.github.io/react/).
 - Worked with PostgreSQL as a master canonical database and ElasticSearch for searching and as a fast-read cache.
 - Utilized ElasticSearch to aggregate large quantities of portal metadata to then visualize with React.js and D3.
 - Created a divide-and-conquer tracing algorithm to recursively trace a provenance graph of files and the workflow runs which generated them.
 - Visualized file provenance graphs and workflow pipelines -- defined using [CWLs](https://www.commonwl.org/) -- on the front-end with React and selected [D3](https://d3js.org) functions (see portfolio).
-- Trained and helped on-board new employees in front-end development and iteration with React.js.
+- Setup Google Analytics to inform UX design and JSON-LD structured data for Search Engine Optimization (SEO).
 - Fully open-source and available at [github.com/4dn-dcic/fourfront](https://github.com/4dn-dcic/fourfront).
 
 
 #### IntelAgent (Startup)
 {:.mb-0.mt-3.text-500}
-##### 2016 Part-Time
+###### 2016 Part-Time
 {:.mt-0.mb-1.text-400}
 - Led development on a cross-platform application in React Native to connect real estate agents with purchasers.
 - Developed a web front-end in [React.js](https://facebook.github.io/react/) as first step and prototype for mobile application design (see portfolio).
@@ -44,7 +56,7 @@ permalink: /about/
 
 #### [Integrated Computer Solutions, Inc.](https://ics.com)
 {:.mb-0.mt-3.text-500}
-##### 2011 - 2016
+###### 2011 - 2016
 {:.mt-0.mb-1.text-400}
 - Oversight, design (partial), development, and maintenance of [viewpointkiosks.com](http://viewpointkiosks.com/) (see portfolio).
 - Designed, planned, developed, and extended functionality & UX of various web applications and sites, including ones based on or integrating with CMSs such as Drupal and Bolt.
@@ -58,26 +70,27 @@ permalink: /about/
 
 #### [Joule Unlimited](https://en.wikipedia.org/wiki/Joule_Unlimited)
 {:.mb-0.mt-3.text-500}
-##### Summer 2010
+###### Summer 2010
 {:.mt-0.mb-1.text-400}
 - Drafted, modeled, rendered, and composited scenes of proposed bio-fuel solar facilities for marketing visualization; learning and applying open-source software such as [BRL-CAD](http://brlcad.org/), Blender, Inkscape, and GIMP.
 
 
 ## Skills & Experience
-{:.text-300.mb-4.mt-4}
+{:.text-300.mb-4.mt-4.about-section-title}
 
 #### [JavaScript (JS)](http://wikipedia.org/wiki/javascript)
 {:.text-500}
-- 6+ years experience writing production-quality front-end JS.
+- 6+ years experience writing production-quality front-end JS (ES3, ES5, ES2015, ...).
 - 4+ years experience building front-ends/apps with [React.js](https://facebook.github.io/react/), incl. 3 months w/ React Native.
 - Building & extending professional, personal, & acadamic JS-based or JS-heavy web sites and applications.
 - Building & reusing portable libraries and components in course of work.
-- Experience with libraries & frameworks including [Backbone.js](http://backbonejs.org/), [ES6/ES2015](https://en.wikipedia.org/wiki/ECMAScript#6th_Edition_-_ECMAScript_2015) with [Webpack](https://webpack.js.org/), [TypeScript](http://typescriptlang.org/), [lodash](https://lodash.com/)/[Underscore](http://underscorejs.org/), [Interactive SVGs](https://developer.mozilla.org/en-US/docs/Web/SVG) & [HTML5 Canvas](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API), [D3.js](https://d3js.org/), [Babylon.js](http://babylonjs.org/) and [three.js](http://threejs.org/) ([WebGL](https://en.wikipedia.org/wiki/WebGL)), (efficient) [jQuery](http://jquery.com/), [Masonry](http://masonry.desandro.com/), [Google Maps JS API](https://developers.google.com/maps/documentation/javascript/), [Leaflets](http://leafletjs.com/), and others.
+- Experience with libraries & frameworks including [Babel](https://babeljs.io/), [Webpack](https://webpack.js.org/), [Interactive SVGs](https://developer.mozilla.org/en-US/docs/Web/SVG) & [HTML5 Canvas](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API), [D3.js](https://d3js.org/), [Backbone.js](http://backbonejs.org/), [lodash](https://lodash.com/)/[Underscore](http://underscorejs.org/), [TypeScript](http://typescriptlang.org/), [Babylon.js](http://babylonjs.org/) and [three.js](http://threejs.org/) ([WebGL](https://en.wikipedia.org/wiki/WebGL)), (efficient) [jQuery](http://jquery.com/), [Google Maps JS API](https://developers.google.com/maps/documentation/javascript/), [Leaflets](http://leafletjs.com/), and others.
 
 #### Front-end design & development with [HTML5](http://wikipedia.org/wiki/html5) (HTML + [CSS3](http://wikipedia.org/wiki/css) + JS)
 {:.text-500}
 - 12+ years exp. designing, developing, and administering web sites & applications, incl. personal & academic projects.
 - Usage of responsive front-end frameworks such as Zurb's [Foundation](http://foundation.zurb.com/) and [Bootstrap](http://getbootstrap.com/).
+- 3+ years exp. of SCSS.
 - Using and extending template engines such as [Twig](http://twig.sensiolabs.org/) (PHP) and [Jinja2](http://jinja.pocoo.org/docs/dev/) (Python).
 - Deep understanding of the Document Object Model (DOM), CSS3 (incl. transforms & animations).
 
@@ -113,14 +126,14 @@ permalink: /about/
 
 
 ## Education
-{:.text-300.mt-4.mb-4}
+{:.text-300.mt-4.mb-4.about-section-title}
 
 #### [Boston Architectural College](http://the-bac.edu/)
 {:.mb-0.mt-3.text-500}
 ##### Bachelor of Design Studies in Digital Design & Visualization, May 2015.
 {:.mt-0.mb-1.text-400}
 - Awards: <em>Degree Project Commendation</em> and <em>Distinction in Practice</em>.
-- Thesis Project: <em>"Building a Citizen-Centric E-Participation Platform,"</em> book available at [https://akb.productions/documents/thesis.pdf](https://akb.productions/documents/thesis.pdf).
+- Thesis Project: <em>"Building a Citizen-Centric E-Participation Platform,"</em> repo available at [github.com/alexkb0009/issues-platform](https://github.com/alexkb0009/issues-platform); ask for book.
 
 #### [Harvard University Extension School](http://extension.harvard.edu/) and [Boston University Metropolitan College (B.U.)](http://bu.edu/met)
 {:.mb-0.mt-3.text-500}
@@ -139,5 +152,5 @@ permalink: /about/
 - 800/600/650 Math/Reading/Writing SAT Scores (2008)
 
 <div class="mt-3">
-<small>Last updated on Saturday, November 10th, 2018. Ask for code samples and/or references.</small>
+<small>Last updated on Sunday, October 6th, 2019. Ask for code samples and/or references.</small>
 </div>

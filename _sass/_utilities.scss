@@ -50,6 +50,7 @@
 .header-social-accent { fill: $color-dot-accent; color: $color-dot-accent; }
 .header-link:hover { color: $color-nav-link !important; } // used for navigation links on homepage
 .text-accent { color: $color-text-accent; } // used for date in post list and home link
+.text-gray { color: #999; } // used for date in post list and home link
 
 /* Layout utilities */
 .container { max-width: $container-width; }
