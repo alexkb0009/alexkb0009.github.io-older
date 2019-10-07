@@ -45,6 +45,7 @@ gems:
 exclude:
   - Gemfile
   - Gemfile.lock
+  - ja-ext-old
 
 image:
   source: ./
@@ -56,7 +57,7 @@ image:
         itemprop: image
       width: 350
     portfolio_thumbnail:
-      height: 200
+      height: 400
 
 jekyll-archives:
   enabled: ['tags', 'year']

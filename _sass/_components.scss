@@ -48,7 +48,7 @@ code {
   li {
     margin-bottom: 0.5em;
 
-    ul li, ol li {
+    ul, ol, ul li, ol li {
       margin-bottom: 0;
     }
   }
@@ -76,7 +76,6 @@ code {
 
       img {
         max-width: none;
-        //max-height: 200px;
         min-width: 100%;
         margin: 0 auto;
         transition: transform .5s;
@@ -87,6 +86,7 @@ code {
         max-width: (12 / 10 * 100%); // make image fill width of container on desktop
         img {
           max-width: none;
+          max-height: 200px;
         }
       }
     }
