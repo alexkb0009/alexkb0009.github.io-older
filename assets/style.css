@@ -99,7 +99,7 @@ code {
   margin-bottom: 16px; }
 .prose li {
   margin-bottom: 0.5em; }
-  .prose li ul li, .prose li ol li {
+  .prose li ul, .prose li ol, .prose li ul li, .prose li ol li {
     margin-bottom: 0; }
 .prose img {
   max-width: 100%; }
@@ -121,7 +121,8 @@ code {
     .prose .col-3 .imageholder {
       max-width: 120%; }
       .prose .col-3 .imageholder img {
-        max-width: none; } }
+        max-width: none;
+        max-height: 200px; } }
 .prose:hover .col-3 .imageholder img {
   transform: scale3d(1.05, 1.05, 1.05); }
 .prose blockquote {
