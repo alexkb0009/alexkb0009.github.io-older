@@ -4,14 +4,22 @@ title: About
 permalink: /about/
 ---
 
-<h2 class="print-only mb-4 mt-0 text-400 name-container">
-    Alexander Balashov
-    <div style="margin-top: -3pt;">
-        <small class="text-300">
-            <a href="https://alexkb0009.github.io/">https://alexkb0009.github.io</a>
-        </small>
+
+<div class="print-only mb-4 mt-0 name-container">
+    <div class="image-column">
+        <div class="image-container">
+            <img src="https://www.gravatar.com/avatar/e32a241bfb3ee9cac4a47f9b72be874c?s=200" />
+        </div>
     </div>
-</h2>
+    <h2 class="mb-0 mt-0 text-400 name-column">
+        <span>Alexander Balashov</span>
+        <div style="margin-top: -3pt; font-size: 0.72em;">
+            <span class="text-300">
+                <a href="https://alexkb0009.github.io/">https://alexkb0009.github.io</a>
+            </span>
+        </div>
+    </h2>
+</div>
 
 
 ## Professional Work
@@ -26,12 +34,13 @@ permalink: /about/
   - Clinical Genomics Analysis Platform ('CGAP') (see portfolio)
   - 4D Nucleome Data Portal ([data.4dnucleome.org](https://data.4dnucleome.org)) (see portfolio)
 - Implemented Pedigree (Family Tree) visualization tool, including algorithms for finding optimal node order & positions and visually appealing edge routing. Built as React components within functional paradigm, using memoization for performance optimization, and ultimately rendered to SVG & HTML DOM elements.
-- Training, on-boarding, and hiring front-end developers.
+- Mentoring, on-boarding, and hiring front-end developers.
 - Drafting UI-related architectures, plans, and tasks in response to business requirements.
-- Aiding other teams in building and packaging visualization components, integrating components into CGAP & 4DN platforms/portals.
+- Aiding external teams in building & packaging visualization tools/components, integrating into CGAP & 4DN platforms.
+- Helped initiate weekly happy hour events and promote team cohesion.
 
 <h6 class="text-400 mt-0 mb-1">
-2016 - 2018&nbsp;&ndash;&nbsp;<span class="text-500">Front-End Developer</span>
+2016 - 2019&nbsp;&ndash;&nbsp;<span class="text-500">Front-End Developer</span>
 </h6>
 - Leading front-end development on the [4D Data Nucleome Portal](https://data.4dnucleome.org), which runs a single-page application.
 - Created and iterated on variety of views and overall front-end design in [React.js](https://facebook.github.io/react/).
@@ -133,7 +142,7 @@ permalink: /about/
 ##### Bachelor of Design Studies in Digital Design & Visualization, May 2015.
 {:.mt-0.mb-1.text-400}
 - Awards: <em>Degree Project Commendation</em> and <em>Distinction in Practice</em>.
-- Thesis Project: <em>"Building a Citizen-Centric E-Participation Platform,"</em> repo available at [github.com/alexkb0009/issues-platform](https://github.com/alexkb0009/issues-platform); ask for book.
+- Thesis Project: <em>"Building a Citizen-Centric E-Participation Platform,"</em> github:[alexkb0009/issues-platform](https://github.com/alexkb0009/issues-platform); ask for book.
 
 #### [Harvard University Extension School](http://extension.harvard.edu/) and [Boston University Metropolitan College (B.U.)](http://bu.edu/met)
 {:.mb-0.mt-3.text-500}

@@ -39,3 +39,48 @@ $color-primary-link: $orange !default;
     vertical-align: middle;
   }
 }
+
+/** About page **/
+
+//@media screen {
+  .name-container {
+    display: flex;
+    align-items: center;
+    > .name-column {
+      flex: 1;
+    }
+    > .image-column {
+      flex: 1;
+      flex: 0 0 auto;
+      text-align: right;
+      box-sizing: content-box !important;
+      padding-top: 2px;
+      height: 75px;
+      padding-right: 20px;
+      > .image-container {
+        display: inline-block;
+        overflow: hidden;
+        width: 75px;
+        height: inherit;
+        border-radius: 50%;
+        > img {
+          width: inherit;
+          height: inherit;
+          
+        }
+      }
+    }
+  }
+//}
+
+
+@media print {
+  .name-container {
+    > .image-column {
+      height: 55px;
+      > .image-container {
+        width: 55px;
+      }
+    }
+  }
+}
