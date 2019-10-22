@@ -33,7 +33,7 @@ permalink: /about/
 - Leading front-end development on two projects with 4+ front-end developers, within multidisciplinary team of 20+.
   - Clinical Genomics Analysis Platform ('CGAP') (see portfolio)
   - 4D Nucleome Data Portal ([data.4dnucleome.org](https://data.4dnucleome.org)) (see portfolio)
-- Implemented Pedigree (Family Tree) visualization tool, including algorithms for finding optimal node order & positions and visually appealing edge routing. Built as React components within functional paradigm, using memoization for performance optimization, and ultimately rendered to SVG & HTML DOM elements.
+- Implemented Pedigree (Family Tree) visualization tool, incl. algorithms for finding optimal node ordering, positioning, and visually-appealing edge routing. Built as React components which leverage memoization to ultimately render SVG & HTML DOM elements.
 - Mentoring, on-boarding, and hiring front-end developers.
 - Drafting UI-related architectures, plans, and tasks in response to business requirements.
 - Aiding external teams in building & packaging visualization tools/components, integrating into CGAP & 4DN platforms.
@@ -42,7 +42,7 @@ permalink: /about/
 <h6 class="text-400 mt-0 mb-1">
 2016 - 2019&nbsp;&ndash;&nbsp;<span class="text-500">Front-End Developer</span>
 </h6>
-- Leading front-end development on the [4D Data Nucleome Portal](https://data.4dnucleome.org), which runs a single-page application.
+- Led front-end development on the [4D Data Nucleome Portal](https://data.4dnucleome.org), which runs a single-page application.
 - Created and iterated on variety of views and overall front-end design in [React.js](https://facebook.github.io/react/).
 - Worked with PostgreSQL as a master canonical database and ElasticSearch for searching and as a fast-read cache.
 - Utilized ElasticSearch to aggregate large quantities of portal metadata to then visualize with React.js and D3.
@@ -73,8 +73,8 @@ permalink: /about/
 - Contribution to design & development of company websites incl. aspects of [ics.com](http://ics.com/) and Qt DevDays 2014 & 2015 Roadshow @ [qtdeveloperdays.com](http://qtdeveloperdays.com/) (see portfolio).
 - Served in all roles (differing per project) of designing, prototyping, implementing, iterating, and testing user experiences & interfaces for web, mobile, tablet, and desktop applications, including those geared for Windows (with .NET/XAML) and those meant to be portable across platforms (with [Qt & QML framework](http://qt-project.org/)).
 - In the course of work or on own time, effectively learned, applied, and/or presented front-end & back-end technologies to own and other teams including Canvas, WebGL (+ Three.JS and other frameworks), interactive SVGs, RESTful AJAX, RequestAnimationFrame, Redis, Bolt CMS, analytics tracking methods, etc.
-- Helped to plan and implement agile iterative design-process-based workflows for effectively meeting project goals and requirements while avoiding common pitfalls such as changing project requirements.
-- Helped to research and analyse different strategies, technologies, and software to advise managers, other developers, and designers in finding better options or solutions in context of available skills and resources.
+- Helped plan and implement agile iterative design-process-based workflows for effectively meeting project goals and requirements while avoiding common pitfalls such as changing project requirements.
+- Helped research and analyse different strategies, technologies, and software to advise managers, other developers, and designers in finding better options or solutions in context of available skills and resources.
 - Iterated through interface design, style, components, and graphic elements for embedded, mobile, and web applications.
 
 #### [Joule Unlimited](https://en.wikipedia.org/wiki/Joule_Unlimited)
