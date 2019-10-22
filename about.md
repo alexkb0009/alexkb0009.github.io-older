@@ -161,5 +161,5 @@ permalink: /about/
 - 800/600/650 Math/Reading/Writing SAT Scores (2008)
 
 <div class="mt-3">
-<small>Last updated on Sunday, October 6th, 2019. Ask for code samples and/or references.</small>
+<small>Last updated on Sunday, October 22nd, 2019. Ask for code samples and/or references.</small>
 </div>
