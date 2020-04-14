@@ -28,7 +28,13 @@ permalink: /about/
 #### [Harvard Medical School / Bioinformatics](https://dbmi.hms.harvard.edu)
 {:.mb-0.mt-3.text-500}
 <h6 class="text-400 mt-0 mb-1">
-2019 - Present&nbsp;&ndash;&nbsp;<span class="text-500">Sr. Front-End/Full-Stack Developer</span>
+    <span>
+        2020 - Present&nbsp;&ndash;&nbsp;<span class="text-500">Lead Front-End Developer</span>
+    </span>
+    <span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+    <span>
+        2019 - 2020&nbsp;&ndash;&nbsp;<span class="text-500">Sr. Front-End/Full-Stack Developer</span>
+    </span>
 </h6>
 - Leading front-end development on two projects with 4+ front-end developers, within multidisciplinary team of 20+.
   - Clinical Genomics Analysis Platform ('CGAP') (see portfolio)
@@ -67,15 +73,14 @@ permalink: /about/
 {:.mb-0.mt-3.text-500}
 ###### 2011 - 2016
 {:.mt-0.mb-1.text-400}
-- Oversight, design (partial), development, and maintenance of [viewpointkiosks.com](http://viewpointkiosks.com/) (see portfolio).
-- Designed, planned, developed, and extended functionality & UX of various web applications and sites, including ones based on or integrating with CMSs such as Drupal and Bolt.
-- Iterated on own and others' code for performance, maintainability, and reusability; documented code.
-- Contribution to design & development of company websites incl. aspects of [ics.com](http://ics.com/) and Qt DevDays 2014 & 2015 Roadshow @ [qtdeveloperdays.com](http://qtdeveloperdays.com/) (see portfolio).
+- Designed, planned, developed, and extended functionality & user experience of various web applications and sites, including ones based on or integrating with CMSs such as Drupal and Bolt.
 - Served in all roles (differing per project) of designing, prototyping, implementing, iterating, and testing user experiences & interfaces for web, mobile, tablet, and desktop applications, including those geared for Windows (with .NET/XAML) and those meant to be portable across platforms (with [Qt & QML framework](http://qt-project.org/)).
+- Contribution to design & development of company websites including [viewpointkiosks.com](http://viewpointkiosks.com/), aspects of [ics.com](http://ics.com/), and Qt DevDays 2014 & 2015 Roadshow @ [qtdeveloperdays.com](http://qtdeveloperdays.com/) (see portfolio).
 - In the course of work or on own time, effectively learned, applied, and/or presented front-end & back-end technologies to own and other teams including Canvas, WebGL (+ Three.JS and other frameworks), interactive SVGs, RESTful AJAX, RequestAnimationFrame, Redis, Bolt CMS, analytics tracking methods, etc.
 - Helped plan and implement agile iterative design-process-based workflows for effectively meeting project goals and requirements while avoiding common pitfalls such as changing project requirements.
 - Helped research and analyse different strategies, technologies, and software to advise managers, other developers, and designers in finding better options or solutions in context of available skills and resources.
 - Iterated through interface design, style, components, and graphic elements for embedded, mobile, and web applications.
+- Iterated on own and others' code for performance, maintainability, and reusability; documented code.
 
 #### [Joule Unlimited](https://en.wikipedia.org/wiki/Joule_Unlimited)
 {:.mb-0.mt-3.text-500}
@@ -89,21 +94,21 @@ permalink: /about/
 
 #### [JavaScript (JS)](http://wikipedia.org/wiki/javascript)
 {:.text-500}
-- 6+ years experience writing production-quality front-end JS (ES3, ES5, ES2015, ...).
-- 4+ years experience building front-ends/apps with [React.js](https://facebook.github.io/react/), incl. 3 months w/ React Native.
+- 6+ years experience writing production front-end JS (ES3, ES5, ES2015, ...).
+- 4+ years experience building front-ends/apps with [React.js](https://facebook.github.io/react/), plus 3 months w/ React Native.
 - Building & extending professional, personal, & acadamic JS-based or JS-heavy web sites and applications.
-- Building & reusing portable libraries and components in course of work.
-- Experience with libraries & frameworks including [Babel](https://babeljs.io/), [Webpack](https://webpack.js.org/), [Interactive SVGs](https://developer.mozilla.org/en-US/docs/Web/SVG) & [HTML5 Canvas](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API), [D3.js](https://d3js.org/), [Backbone.js](http://backbonejs.org/), [lodash](https://lodash.com/)/[Underscore](http://underscorejs.org/), [TypeScript](http://typescriptlang.org/), [Babylon.js](http://babylonjs.org/) and [three.js](http://threejs.org/) ([WebGL](https://en.wikipedia.org/wiki/WebGL)), (efficient) [jQuery](http://jquery.com/), [Google Maps JS API](https://developers.google.com/maps/documentation/javascript/), [Leaflets](http://leafletjs.com/), and others.
+- Building, publishing, & reusing portable libraries and components in course of work.
+- Experience with libraries & frameworks including [Babel](https://babeljs.io/), [Webpack](https://webpack.js.org/), React, [Interactive SVGs](https://developer.mozilla.org/en-US/docs/Web/SVG) & [HTML5 Canvas](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API), [D3.js](https://d3js.org/), [Backbone.js](http://backbonejs.org/), [lodash](https://lodash.com/)/[Underscore](http://underscorejs.org/), [TypeScript](http://typescriptlang.org/), [Babylon.js](http://babylonjs.org/) and [three.js](http://threejs.org/) ([WebGL](https://en.wikipedia.org/wiki/WebGL)), (efficient) [jQuery](http://jquery.com/), [Google Maps JS API](https://developers.google.com/maps/documentation/javascript/), [Leaflets](http://leafletjs.com/), and others.
 
-#### Front-end design & development with [HTML5](http://wikipedia.org/wiki/html5) (HTML + [CSS3](http://wikipedia.org/wiki/css) + JS)
+#### Web design & development with [HTML5](http://wikipedia.org/wiki/html5) (HTML + [CSS3](http://wikipedia.org/wiki/css) + JS)
 {:.text-500}
-- 12+ years exp. designing, developing, and administering web sites & applications, incl. personal & academic projects.
+- 12+ years exp. designing, developing, and administering web sites & applications, inclusive of personal & academic projects.
 - Usage of responsive front-end frameworks such as Zurb's [Foundation](http://foundation.zurb.com/) and [Bootstrap](http://getbootstrap.com/).
 - 3+ years exp. of SCSS.
 - Using and extending template engines such as [Twig](http://twig.sensiolabs.org/) (PHP) and [Jinja2](http://jinja.pocoo.org/docs/dev/) (Python).
 - Deep understanding of the Document Object Model (DOM), CSS3 (incl. transforms & animations).
 
-#### Object-oriented & functional back-end programming with [Python](http://python.org/), [PHP](http://php.net/), [C#](http://wikipedia.org/wiki/c_sharp_(programming_language)) (+ [.NET](http://microsoft.com/net), [XAML](http://en.wikipedia.org/wiki/Extensible_Application_Markup_Language)), & [Java](http://oracle.com/java)
+#### OOP & FP back-end development with [Python](http://python.org/), [PHP](http://php.net/), [C#](http://wikipedia.org/wiki/c_sharp_(programming_language)) (+ [.NET](http://microsoft.com/net), [XAML](http://en.wikipedia.org/wiki/Extensible_Application_Markup_Language)), & [Java](http://oracle.com/java)
 {:.text-500}
 - 5+ years exp. with Python, including web frameworks such as [Pyramid](https://trypyramid.com/), [Flask](http://flask.pocoo.org/), & [Bottle](http://bottlepy.org/) to create horizontally-scalable hybrid & single-page web applications and RESTful APIs (for usage with mobile applications); [Tornado](http://www.tornadoweb.org/) for WebSockets.
 - 5 years experience with PHP, including frameworks such as Symfony2, Silex, & DBALs such as Doctrine.
@@ -161,5 +166,5 @@ permalink: /about/
 - 800/600/650 Math/Reading/Writing SAT Scores (2008)
 
 <div class="mt-3">
-<small>Last updated on Sunday, October 22nd, 2019. Ask for code samples and/or references.</small>
+<small>Last updated on April 14nd, 2020.</small>
 </div>
